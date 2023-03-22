@@ -1,0 +1,30 @@
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100px;
+    background-color: inherit;
+}
+
+.nav {
+    display: flex;
+    width: 500px;
+    justify-content: space-around;
+}
+
+.image {
+    margin-inline-start: 1em;
+}
+
+.nav li {
+    list-style: none;
+}
+
+.bkgd {
+    background-color: inherit;
+
+    &:hover {
+        background-color: inherit;
+    }
+}
