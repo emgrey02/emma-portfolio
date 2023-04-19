@@ -3,6 +3,7 @@ import Layout, { siteTitle } from '../components/layout';
 import styles from '../styles/Home.module.scss';
 import Link from 'next/link';
 import Projects from '../components/projects';
+import Footer from '../components/footer';
 
 export default function Home() {
 	return (
@@ -41,6 +42,7 @@ export default function Home() {
 			<section>
 				<Projects></Projects>
 			</section>
+			<Footer></Footer>
 		</div>
 	);
 }

@@ -4,6 +4,7 @@ import styles from './layout.module.scss';
 import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
 import Navigation from './navigation';
+import Footer from './footer';
 
 const name = 'emma grey';
 export const siteTitle = `Emma's Portfolio`;
@@ -62,6 +63,7 @@ export default function Layout({ children, home }) {
 					<Link href="/">← Back to home</Link>
 				</div>
 			)}
+			{!home && <Footer></Footer>}
 		</div>
 	);
 }

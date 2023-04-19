@@ -20,7 +20,8 @@ export default function contactForm() {
 
 				<label htmlFor="message">message</label>
 				<textarea
-					rows="10"
+					className={styles.textArea}
+					rows="7"
 					id="message"
 					name="message"
 					required

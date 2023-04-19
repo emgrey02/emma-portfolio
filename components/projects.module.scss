@@ -32,4 +32,8 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+
+    li:hover::after {
+        transform: scale(0);
+    }
 }

@@ -5,6 +5,11 @@
     max-width: 40ch;
 }
 
+.textArea {
+    font-family: inherit;
+    resize: vertical;
+}
+
 .form {
     display: grid;
     grid-template-columns: 1fr;
@@ -19,7 +24,7 @@
         border: none;
         box-shadow: 0px 0px 0px 2px var.$black;
         transition: box-shadow 200ms ease-in-out;
-        padding: .5em .2em;
+        padding: .5em .1em;
 
         &:focus {
             outline: none;
@@ -29,5 +34,9 @@
 
     label:not(:first-child) {
         margin-block-start: 10px;
+    }
+
+    button {
+        margin-block-start: 1em;
     }
 }
