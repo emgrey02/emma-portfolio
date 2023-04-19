@@ -1,7 +1,7 @@
 import ProjectsNav from './projects-nav';
 import Image from 'next/image';
 import Link from 'next/link';
-import styles from './projects.module.css';
+import styles from './projects.module.scss';
 
 export default function Projects() {
 	return (
@@ -10,7 +10,7 @@ export default function Projects() {
 				<Image
 					priority
 					src="/images/half-sun-light.svg"
-					className={styles.img}
+					className={styles.sunImg}
 					height={150}
 					width={300}
 					alt="the top half of a sun"

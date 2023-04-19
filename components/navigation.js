@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import styles from './navigation.module.scss';
 import Image from 'next/image';
-import utilStyles from '../styles/utils.module.css';
 
 export default function Navigation() {
 	return (

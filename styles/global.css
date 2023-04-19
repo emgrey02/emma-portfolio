@@ -22,7 +22,6 @@ a {
 	color: inherit;
 	text-decoration: none;
 	transition: background-color 150ms ease, color 150ms ease;
-	background-color: #e6bd6b;
 }
 
 nav li::after {
@@ -51,19 +50,6 @@ li:hover::after {
 	a {
 		transition: none;
 	}
-}
-
-nav a {
-	background-color: inherit;
-}
-
-nav a:hover {
-	color: #e6bd6b;
-}
-
-a:hover {
-	color: #e4d9c7;
-	background-color: #484844;
 }
 
 img {

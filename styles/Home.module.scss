@@ -1,0 +1,11 @@
+@use '/styles/variables.module.scss' as var;
+
+.link {
+    text-decoration: underline;
+    transition: box-shadow 150ms ease-in-out;
+
+    &:hover {
+        text-decoration: none;
+        box-shadow: 0 0 0 2px var.$grey;
+    }
+}

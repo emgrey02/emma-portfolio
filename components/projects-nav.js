@@ -1,4 +1,4 @@
-import styles from './projects-nav.module.css';
+import styles from './projects-nav.module.scss';
 import utilStyles from '../styles/utils.module.css';
 import React, { useState } from 'react';
 

@@ -1,3 +1,5 @@
+@use '/styles/variables.module.scss' as var;
+
 .container {
     padding: 0 1rem;
     margin: 3rem auto 6rem;
@@ -17,7 +19,13 @@
 }
 
 .backToHome {
-    margin: 3rem 0 0;
+    margin: 3rem .5em 0;
+    width: fit-content;
+    transition: box-shadow 150ms ease-in-out;
+
+    &:hover {
+        box-shadow: 0 0 0 3px var.$grey;
+    }
 }
 
 .noBkgd {
