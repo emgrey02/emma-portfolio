@@ -6,7 +6,7 @@ import styles from './projects.module.scss';
 export default function Projects() {
 	return (
 		<div>
-			<div className={styles.nav}>
+			<div id="portfolio" className={styles.nav}>
 				<Image
 					priority
 					src="/images/half-sun-light.svg"
@@ -23,7 +23,7 @@ export default function Projects() {
 						<h2>Jam House</h2>
 						<Link href="portfolio/jam-house">
 							<Image
-								src="/images/portfolio-jamhouse-home.png"
+								src="/images/jam-house.png"
 								width="0"
 								height="0"
 								sizes="100vw"
@@ -45,7 +45,7 @@ export default function Projects() {
 						<h2>Style Stage</h2>
 						<Link href="portfolio/style-stage">
 							<Image
-								src="/images/portfolio-jamhouse-home.png"
+								src="/images/style-stage.png"
 								width="0"
 								height="0"
 								sizes="100vw"
@@ -65,7 +65,7 @@ export default function Projects() {
 						<h2>Life Nailed</h2>
 						<Link href="portfolio/life-nailed">
 							<Image
-								src="/images/portfolio-jamhouse-home.png"
+								src="/images/life-nailed.png"
 								width="0"
 								height="0"
 								sizes="100vw"
@@ -85,7 +85,7 @@ export default function Projects() {
 						<h2>Diversity Community Group</h2>
 						<Link href="portfolio/dcg">
 							<Image
-								src="/images/portfolio-jamhouse-home.png"
+								src="/images/dcg.png"
 								width="0"
 								height="0"
 								sizes="100vw"
@@ -104,9 +104,9 @@ export default function Projects() {
 					</div>
 					<div id="digital-portfolio">
 						<h2>Digital Portfolio</h2>
-						<Link href="portfolio/dcg">
+						<Link href="portfolio/digital-portfolio">
 							<Image
-								src="/images/portfolio-jamhouse-home.png"
+								src="/images/digital-port.png"
 								width="0"
 								height="0"
 								sizes="100vw"

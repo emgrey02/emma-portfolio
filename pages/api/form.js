@@ -1,23 +1,14 @@
 export default function handler(req, res) {
-	// Get data submitted in request's body.
-	const body = req.body;
-
-	// Optional logging to see the responses
-	// in the command line where next.js app is running.
-	console.log('body: ', body);
-
-	// Guard clause checks for first and last name,
-	// and returns early if they are not found
-	// if (!body.first || !body.last) {
-	// 	// Sends a HTTP bad request error code
-	// 	return res.status(400).json({ data: 'First or last name not found' });
-	// }
-
-	// Found the name.
-	// Sends a HTTP success code
-	res.status(200).json({
-		name: `${body.name}`,
-		email: `${body.email}`,
-		message: `${body.message}`,
+	let nodemailer = require('nodemailer');
+	const transporter = nodemailer.createTransport({
+		port: 465,
+		host: 'smtp.gmail.com',
+		auth: {
+			user: 'emgrey02@gmail.com',
+			pass: 'Goochangeit2!',
+		},
+		secure: true,
 	});
+
+	console.log(req.body);
 }

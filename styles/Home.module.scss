@@ -9,3 +9,28 @@
         box-shadow: 0 0 0 2px var.$grey;
     }
 }
+
+.grid {
+    display: grid;
+    padding-inline: 2em;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: auto;
+    gap: 1em;
+
+    h3 {
+        text-align: start;
+    }
+
+    &>div {
+        justify-self: center;
+    }
+
+    @media (max-width: 750px) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.img {
+    width: 100%;
+    height: auto;
+}

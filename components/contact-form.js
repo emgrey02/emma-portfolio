@@ -2,32 +2,90 @@ import styles from '../components/contactForm.module.scss';
 
 import Button from './button';
 
+import { useState } from 'react';
+
 export default function contactForm() {
+	const [name, setName] = useState('');
+	const [email, setEmail] = useState('');
+	const [message, setMessage] = useState('');
+	const [submitted, setSubmitted] = useState('');
+
+	const handleSubmit = (e) => {
+		e.preventDefault();
+		console.log('Sending');
+
+		let data = {
+			name,
+			email,
+			message,
+		};
+
+		fetch('/api/form', {
+			method: 'POST',
+			headers: {
+				Accept: 'application/json, text/plain, */*',
+				'Content-Type': 'application/json',
+			},
+			body: JSON.stringify(data),
+		}).then((res) => {
+			console.log('Response received');
+			if (res.status === 200) {
+				console.log('Response succeeded!');
+				setSubmitted(true);
+				setName('');
+				setEmail('');
+				setMessage('');
+			}
+		});
+	};
+
 	return (
 		<div className={styles.container}>
 			<form
 				className={styles.form}
-				action="/api/form"
-				method="post"
 				id="send-message"
 				aria-label="Send a message to Emma"
 			>
 				<label htmlFor="name">name</label>
-				<input id="name" name="name" type="text" required />
+				<input
+					onChange={(e) => {
+						setName(e.target.value);
+					}}
+					id="name"
+					name="name"
+					type="text"
+					required
+				/>
 
 				<label htmlFor="email">email</label>
-				<input id="email" name="email" type="text" required />
+				<input
+					onChange={(e) => {
+						setEmail(e.target.value);
+					}}
+					id="email"
+					name="email"
+					type="text"
+					required
+				/>
 
 				<label htmlFor="message">message</label>
 				<textarea
 					className={styles.textArea}
+					onChange={(e) => {
+						setMessage(e.target.value);
+					}}
 					rows="7"
 					id="message"
 					name="message"
 					required
 				></textarea>
 
-				<Button text="submit" type="submit"></Button>
+				<input
+					onClick={(e) => {
+						handleSubmit(e);
+					}}
+					type="submit"
+				/>
 			</form>
 		</div>
 	);

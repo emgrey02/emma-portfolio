@@ -22,6 +22,9 @@ export default function Navigation() {
 				<li>
 					<Link href="/contact">Contact</Link>
 				</li>
+				<li>
+					<Link href="/resume">Resume</Link>
+				</li>
 			</ul>
 		</div>
 	);

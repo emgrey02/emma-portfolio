@@ -1,5 +1,5 @@
 import styles from './projects-nav.module.scss';
-import utilStyles from '../styles/utils.module.css';
+import utilStyles from '../styles/utils.module.scss';
 import React, { useState } from 'react';
 
 //const [dropdownState, open] = useState(false);
