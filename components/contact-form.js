@@ -80,12 +80,12 @@ export default function contactForm() {
 					required
 				></textarea>
 
-				<input
+				<Button
 					onClick={(e) => {
 						handleSubmit(e);
 					}}
-					type="submit"
-				/>
+					text="submit"
+				></Button>
 			</form>
 		</div>
 	);
