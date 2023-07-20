@@ -1,9 +1,16 @@
 @use '../styles/variables.module.scss' as var;
 
-.selected {
-  background-color: var.$bone;
-}
+.button {
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+  background-color: transparent;
+  height: 100px;
 
-.name {
-  background-color: var.$bone;
+  @media (min-width: 800px) {
+    width: 100%;
+    flex-shrink: 0;
+    text-align: end;
+  }
 }

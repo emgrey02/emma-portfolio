@@ -51,6 +51,15 @@ export default function Layout({ children, home }) {
 									cubic-bezier(0.25, 0.46, 0.45, 0.94);
 							}
 
+							@media (max-width: 1000px) {
+								h1 {
+									font-size: 3rem;
+									position: relative;
+									left: 50%;
+									transform: translate(-50%, 50%);
+								}
+							}
+
 							@keyframes fade-slide {
 								0% {
 									opacity: 0;
