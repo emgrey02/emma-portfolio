@@ -8,22 +8,22 @@ export default function Navigation() {
 			<Link className={styles.bkgd} href="/">
 				<Image
 					priority
-					src="/images/eg-full-logo-light.svg"
+					src="/images/eg-logo-dark.svg"
 					className={styles.image}
-					height={90}
-					width={250}
+					height={100}
+					width={100}
 					alt="Emma's logo, which is her initials 'e' and 'g' with three sun rays coming out towards the top right corner."
 				/>
 			</Link>
 			<ul className={styles.nav}>
 				<li>
-					<Link href="/about">About</Link>
+					<Link href="/about">about</Link>
 				</li>
 				<li>
-					<Link href="/contact">Contact</Link>
+					<Link href="/contact">contact</Link>
 				</li>
 				<li>
-					<Link href="/resume">Resume</Link>
+					<Link href="/resume">resume</Link>
 				</li>
 			</ul>
 		</div>

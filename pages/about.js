@@ -1,5 +1,6 @@
 import Layout from '../components/layout';
 import Head from 'next/head';
+import { darkerGrotesque } from '../styles/fonts';
 
 export default function About() {
 	return (
@@ -7,28 +8,32 @@ export default function About() {
 			<Head>
 				<title>About Emma</title>
 			</Head>
-			<h1>About</h1>
+			<h1 className={darkerGrotesque.className}>About</h1>
 			<p>Here's a little bit about myself!</p>
 			<p>
 				My name is Emma (she/her). After I completed a bachelor's degree
-				in Clarinet Performance in 2019, I began to transition to a
-				career in Web Design and Development. Playing instruments isn't
-				feasible for me anymore because of the onset of an auto-immune
-				disease called Scleroderma. While it has caused struggle in my
-				life, I am more dedicated and passionate about making the web
-				(and the world) less ableist. It's disappointing how generally
-				inaccessible the web is to our disabled population (which is 15%
-				of the world!).
+				in Clarinet Performance in 2019 with the hopes of becoming a
+				gigging classical/jazz musician, I decided to transition to a
+				career in web design and/or development. I found that I enjoy
+				creating accessible front-end systems that users can effectively
+				interact with. Similar to how I strove to bring joy to audiences
+				with music, I want the user to enjoy their experience on my web
+				pages and feel satisfied afterwards because they accomplished
+				their goals with ease. While music feels more open and varied in
+				how it can affect an audience, poor design decisions on the web
+				immediately detriment the user experience and can drive people
+				away quickly. I realize this and feel it is my responsibility to
+				embed accessibility into my design and development process so
+				that no one is left behind. I create these experiences knowing
+				that there are more effective ways than others to solve a single
+				problem or reach a goal.
 			</p>
 			<p>
-				Currently I'm working on an Associate's degree in Interface
-				Design and Web Development with the goal of landing an
-				entry-level frontend developer position. I will graduate in May
-				of 2023. I have the most experience developing with HTML, CSS,
-				and JavaScript, and I've dabbled in frameworks like Svelte and
-				React. As I continue coding and learning, I want to keep
-				contributing to open-source projects and start working on larger
-				projects with others.
+				I just completed an Associate's degree in Interface Design and
+				Web Development in May of 2023, and my goal is to land an
+				entry-level web design or development position. I have the most
+				experience developing with HTML, CSS, and JavaScript, and I've
+				used frameworks like React, Next, and Svelte.
 			</p>
 			<p>
 				Thanks for being here! Please feel free to contact me about

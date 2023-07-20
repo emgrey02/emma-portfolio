@@ -1,60 +1,64 @@
-.heading2Xl {
-    font-size: 3rem;
-    line-height: 1.1;
-    letter-spacing: -0.05rem;
-    margin: 1rem 0;
+.heading2xl {
+  font-size: 8rem;
+  line-height: 1.1;
+  letter-spacing: .3rem;
+  margin: 1rem 0;
+  font-family: var(--title-font);
 }
 
 .headingXl {
-    font-size: 2rem;
-    line-height: 1.3;
-    letter-spacing: 0.2rem;
-    margin: 1rem 0;
-    color: inherit;
+  font-size: 2rem;
+  line-height: 1.3;
+  letter-spacing: 0.2rem;
+  margin: 1rem 0;
+  color: inherit;
+  font-family: var(--title-font);
 }
 
 .headingLg {
-    font-size: 1.5rem;
-    line-height: 1.4;
-    margin: 1rem 0;
+  font-size: 3rem;
+  line-height: 1.4;
+  margin: 1rem 0;
+  font-family: var(--title-font);
 }
 
 .headingMd {
-    font-size: 1.2rem;
-    line-height: 1.5;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  font-family: var(--title-font);
 }
 
 .borderCircle {
-    border-radius: 1em;
+  border-radius: 1em;
 }
 
 .colorInherit {
-    color: inherit;
+  color: inherit;
 }
 
 .marginSm {
-    margin-block: 1em;
+  margin-block: 1em;
 }
 
 .marginMd {
-    margin-block: 3em;
+  margin-block: 3em;
 }
 
 .list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .listItem {
-    margin: 0 0 1.25rem;
+  margin: 0 0 1.25rem;
 }
 
 .lightText {
-    color: #666;
+  color: #666;
 }
 
 .list {
-    display: flex;
-    gap: 1em;
+  display: flex;
+  gap: 1em;
 }

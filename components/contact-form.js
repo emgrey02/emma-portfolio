@@ -1,4 +1,5 @@
 import styles from '../components/contactForm.module.scss';
+import { useRouter } from 'next/router';
 
 import Button from './button';
 
@@ -8,40 +9,29 @@ export default function contactForm() {
 	const [name, setName] = useState('');
 	const [email, setEmail] = useState('');
 	const [message, setMessage] = useState('');
-	const [submitted, setSubmitted] = useState('');
+	const router = useRouter();
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
-		console.log('Sending');
 
-		let data = {
+		const data = {
 			name,
 			email,
 			message,
 		};
 
 		fetch('/api/form', {
-			method: 'POST',
-			headers: {
-				Accept: 'application/json, text/plain, */*',
-				'Content-Type': 'application/json',
-			},
+			method: 'post',
 			body: JSON.stringify(data),
-		}).then((res) => {
-			console.log('Response received');
-			if (res.status === 200) {
-				console.log('Response succeeded!');
-				setSubmitted(true);
-				setName('');
-				setEmail('');
-				setMessage('');
-			}
 		});
+
+		router.push('/form-thankyou');
 	};
 
 	return (
 		<div className={styles.container}>
 			<form
+				onSubmit={handleSubmit}
 				className={styles.form}
 				id="send-message"
 				aria-label="Send a message to Emma"
@@ -81,6 +71,7 @@ export default function contactForm() {
 				></textarea>
 
 				<Button
+					className="submit"
 					onClick={(e) => {
 						handleSubmit(e);
 					}}

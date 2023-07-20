@@ -4,8 +4,8 @@ body {
 	margin: 0;
 	line-height: 1.5;
 	font-size: 1.2rem;
-	background-color: #e4d9c7;
 	scroll-behavior: smooth;
+	background-color: #e4d9c7;
 }
 
 p {

@@ -2,23 +2,32 @@ import ProjectsNav from './projects-nav';
 import Image from 'next/image';
 import Link from 'next/link';
 import styles from './projects.module.scss';
+import { darkerGrotesque } from '../styles/fonts';
+import '../styles/variables.module.scss';
 
 export default function Projects() {
 	return (
 		<div>
-			<div id="portfolio" className={styles.nav}>
+			<div className={styles.header}>
+				<h2 className={darkerGrotesque.className}>portfolio</h2>
 				<Image
 					priority
 					src="/images/half-sun-light.svg"
 					className={styles.sunImg}
-					height={150}
-					width={300}
+					height={100}
+					width={200}
 					alt="the top half of a sun"
 				/>
-				<ProjectsNav></ProjectsNav>
+				<style jsx>{`
+					h2 {
+						font-size: 3rem;
+						color: #2b3347;
+					}
+				`}</style>
 			</div>
 			<section className={styles.container}>
-				<div className={styles.images}>
+				<ProjectsNav></ProjectsNav>
+				{/* <div className={styles.images}>
 					<div id="jam-house">
 						<h2>Jam House</h2>
 						<Link href="portfolio/jam-house">
@@ -123,7 +132,7 @@ export default function Projects() {
 							<li>netlify</li>
 						</ul>
 					</div>
-				</div>
+				</div> */}
 			</section>
 		</div>
 	);

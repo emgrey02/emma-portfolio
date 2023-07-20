@@ -1,36 +1,44 @@
 @use '/styles/variables.module.scss' as var;
 
 .link {
-    text-decoration: underline;
-    transition: box-shadow 150ms ease-in-out;
+  text-decoration: underline;
+  transition: box-shadow 150ms ease-in-out;
 
-    &:hover {
-        text-decoration: none;
-        box-shadow: 0 0 0 2px var.$grey;
-    }
+  &:hover {
+    text-decoration: none;
+    box-shadow: 0 0 0 2px var.$grey;
+  }
 }
 
 .grid {
-    display: grid;
-    padding-inline: 2em;
-    grid-template-columns: 4fr 1fr;
-    grid-template-rows: auto;
-    gap: 1em;
+  display: grid;
+  padding-inline: 2em;
+  grid-template-columns: 4fr 1fr;
+  grid-template-rows: auto;
+  gap: 1em;
 
-    h3 {
-        text-align: start;
-    }
+  h3 {
+    text-align: start;
+  }
 
-    &>div {
-        justify-self: center;
-    }
+  &>div {
+    justify-self: center;
+  }
 
-    @media (max-width: 750px) {
-        grid-template-columns: 1fr;
-    }
+  @media (max-width: 750px) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
+}
+
+.marquee {
+  display: flex;
+  padding-block: 1em;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  width: 100%;
 }

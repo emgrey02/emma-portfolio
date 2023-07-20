@@ -6,6 +6,7 @@ import Link from 'next/link';
 import Projects from '../components/projects';
 import Footer from '../components/footer';
 import Button from '../components/button';
+import Marquee from 'react-fast-marquee';
 
 export default function Home() {
 	return (
@@ -14,45 +15,20 @@ export default function Home() {
 				<Head>
 					<title>{siteTitle}</title>
 				</Head>
-				<div>
-					<p>Hello there! Welcome to my portfolio website.</p>
-					<p>
-						Here you can take a look at the projects I’ve worked on
-						throughout the three years I’ve been learning web design
-						and development. I’m passionate about creating effective
-						user experiences that are accessible to all, and I hope
-						that is evident in my creations. I will not contribute
-						to the 96% of website home pages that fail to be
-						accessible! (
-						<a
-							className={styles.link}
-							href="https://webaim.org/projects/million/#wcag"
-						>
-							WebAIM
-						</a>
-						)
-					</p>
-					<p>
-						I designed this website with Figma and coded it with
-						Next.js. If you’d like to learn a little bit about me,
-						visit the{' '}
-						<Link className={styles.link} href="/about">
-							About
-						</Link>{' '}
-						page. If you want to contact me for any reason, please
-						go to the{' '}
-						<Link className={styles.link} href="/contact">
-							Contact
-						</Link>{' '}
-						page and fill out the form. Otherwise, I hope you enjoy
-						your time here!
-					</p>
-				</div>
-				<Button
-					link="#portfolio"
-					className={utilStyles.marginMd}
-					text="See Emma's Portfolio"
-				></Button>
+				<Marquee className={styles.marquee}>
+					<div>
+						| Front End Web Developer | Interface Designer |
+						Musician |
+					</div>
+					<div>
+						| Front End Web Developer | Interface Designer |
+						Musician |
+					</div>
+					<div>
+						| Front End Web Developer | Interface Designer |
+						Musician |
+					</div>
+				</Marquee>
 			</Layout>
 			<section>
 				<Projects></Projects>

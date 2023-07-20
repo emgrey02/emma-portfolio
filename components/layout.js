@@ -5,9 +5,10 @@ import utilStyles from '../styles/utils.module.scss';
 import Link from 'next/link';
 import Navigation from './navigation';
 import Footer from './footer';
+import { darkerGrotesque } from '../styles/fonts';
 
 const name = 'emma grey';
-export const siteTitle = `Emma's Portfolio`;
+export const siteTitle = `emma grey`;
 
 export default function Layout({ children, home }) {
 	return (
@@ -27,34 +28,50 @@ export default function Layout({ children, home }) {
 				<meta name="og:title" content={siteTitle} />
 				<meta name="twitter:card" content="summary_large_image" />
 			</Head>
+			<Navigation></Navigation>
 			<header className={styles.header}>
-				<Navigation></Navigation>
 				{home ? (
-					<>
+					<div className={styles.title}>
 						<Image
 							priority
-							src="/images/eg-logo-light.svg"
+							src="/images/small-sun.svg"
 							className={styles.image}
-							height={144}
-							width={144}
+							height={700}
+							width={800}
 							alt="Emma's logo, which is her initials 'e' and 'g' with three sun rays coming out towards the top right corner."
 						/>
-						<h1 className={utilStyles.heading2Xl}>{name}</h1>
-					</>
+						<h1 className={darkerGrotesque.className}>{name}</h1>
+						<style jsx>{`
+							h1 {
+								position: absolute;
+								bottom: 3.2rem;
+								left: 41%;
+								width: max-content;
+								animation: fade-slide 1s
+									cubic-bezier(0.25, 0.46, 0.45, 0.94);
+							}
+
+							@keyframes fade-slide {
+								0% {
+									opacity: 0;
+									transform: translateX(200px);
+								}
+							}
+						`}</style>
+					</div>
 				) : (
-					<>
-						<Link className={styles.noBkgd} href="/">
+					<div className={styles.smallTitle}>
+						<Link href="/">
 							<Image
 								priority
-								src="/images/half-sun-light.svg"
+								src="/images/eg-full-logo-light.svg"
 								className={styles.img}
 								height={150}
 								width={300}
 								alt="the top half of a sun"
 							/>
 						</Link>
-						<h2 className={utilStyles.headingLg}>{name}</h2>
-					</>
+					</div>
 				)}
 			</header>
 			<main className={styles.container}>{children}</main>

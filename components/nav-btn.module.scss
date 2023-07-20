@@ -1,0 +1,9 @@
+@use '../styles/variables.module.scss' as var;
+
+.selected {
+  background-color: var.$bone;
+}
+
+.name {
+  background-color: var.$bone;
+}

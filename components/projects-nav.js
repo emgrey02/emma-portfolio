@@ -1,28 +1,24 @@
 import styles from './projects-nav.module.scss';
-import utilStyles from '../styles/utils.module.scss';
 import React, { useState } from 'react';
+import NavButton from './nav-btn';
 
-//const [dropdownState, open] = useState(false);
+// const [selectedState, open] = useState(false);
 
 export default function ProjectsNav() {
 	return (
 		<nav className={styles.container}>
-			<h3 className={utilStyles.headingXl}>websites</h3>
 			<ul className={styles.nav}>
 				<li className={styles.listItem}>
-					<a href="#jam-house">Jam House</a>
+					<NavButton text="websites" selected></NavButton>
 				</li>
 				<li className={styles.listItem}>
-					<a href="#style-stage">Style Stage</a>
+					<NavButton text="designs"></NavButton>
 				</li>
 				<li className={styles.listItem}>
-					<a href="#life-nailed">Life Nailed</a>
+					<NavButton text="art"></NavButton>
 				</li>
 				<li className={styles.listItem}>
-					<a href="#dcg">Diversity Community Group</a>
-				</li>
-				<li className={styles.listItem}>
-					<a href="#digital-portfolio">Digital Portfolio</a>
+					<NavButton text="music"></NavButton>
 				</li>
 			</ul>
 		</nav>

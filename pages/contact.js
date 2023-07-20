@@ -2,6 +2,7 @@ import Layout from '../components/layout';
 import ContactForm from '../components/contact-form';
 import utilStyles from '../styles/utils.module.scss';
 import Head from 'next/head';
+import { darkerGrotesque } from '../styles/fonts';
 
 export default function Contact() {
 	return (
@@ -9,7 +10,7 @@ export default function Contact() {
 			<Head>
 				<title>Contact Emma</title>
 			</Head>
-			<h1>Contact Emma</h1>
+			<h1 className={darkerGrotesque.className}>Contact Emma</h1>
 			<div>
 				<ul className={utilStyles.list}>
 					<li>
