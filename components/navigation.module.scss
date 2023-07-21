@@ -1,69 +1,58 @@
 @use '../styles/variables.module.scss' as var;
 
 .container {
-  width: 300px;
-  clip-path: circle(19% at 17.8% 17.5%);
-  animation: pulse 1s alternate infinite;
+  width: 100%;
   background-color: var.$grey;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  transition: clip-path 1s;
+  align-items: center;
   position: fixed;
   color: var.$bone;
-  cursor: pointer;
   z-index: 2;
 
-  &:hover,
-  &:focus-within {
-    clip-path: circle(70% at 0% 20%);
-    animation: none;
-  }
-
-  @media (max-width: 800px) {
-    width: 100%;
-    justify-items: start;
-    clip-path: none;
-    align-items: center;
+  @media (min-width: 800px) {
+    width: 300px;
+    clip-path: circle(19% at 17.8% 17.5%);
+    align-items: flex-start;
+    transition: clip-path 1s;
+    cursor: pointer;
 
     &:hover,
     &:focus-within {
-      clip-path: none;
-      animation: none;
+      clip-path: circle(70% at 0% 20%);
     }
 
   }
-
 
 }
 
 .nav {
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  padding-block-end: 2em;
+  justify-content: center;
+  padding-block: .5em;
   color: inherit;
   transition: color 500ms;
+  gap: 2em;
+  margin: 0;
 
-  @media (max-width: 800px) {
+  @media (min-width: 800px) {
     width: 100%;
-    flex-direction: row;
-    padding-block: .5em;
-    justify-content: center;
-    margin: 0;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-block-end: 2em;
+    gap: 0;
   }
 }
 
 .image {
-  width: min-content;
-  background-color: inherit;
-  transition: background-color 500ms;
-  padding-inline-start: .2em;
+  width: 50px;
+  height: 50px;
+  padding: 0;
 
-  @media (max-width: 800px) {
-    width: 50px;
-    height: 50px;
-    padding: 0;
+  @media (min-width: 800px) {
+    width: 90px;
+    height: auto;
+    padding-inline-start: .7em;
   }
 }
 
