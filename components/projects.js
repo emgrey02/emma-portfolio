@@ -1,33 +1,32 @@
 import ProjectsNav from './projects-nav';
 import Image from 'next/image';
-import Link from 'next/link';
 import styles from './projects.module.scss';
 import { darkerGrotesque } from '../styles/fonts';
 import '../styles/variables.module.scss';
 
 export default function Projects() {
-	return (
-		<div>
-			<div className={styles.header}>
-				<h2 className={darkerGrotesque.className}>portfolio</h2>
-				<Image
-					priority
-					src="/images/half-sun-light.svg"
-					className={styles.sunImg}
-					height={100}
-					width={200}
-					alt="the top half of a sun"
-				/>
-				<style jsx>{`
-					h2 {
-						font-size: 3rem;
-						color: #2b3347;
-					}
-				`}</style>
-			</div>
-			<section className={styles.container}>
-				<ProjectsNav></ProjectsNav>
-				{/* <div className={styles.images}>
+    return (
+        <div>
+            <div className={styles.header}>
+                <h2 className={darkerGrotesque.className}>portfolio</h2>
+                <Image
+                    priority
+                    src="/images/half-sun-light.svg"
+                    className={styles.sunImg}
+                    height={100}
+                    width={200}
+                    alt="the top half of a sun"
+                />
+                <style jsx>{`
+                    h2 {
+                        font-size: 3rem;
+                        color: #2b3347;
+                    }
+                `}</style>
+            </div>
+            <section className={styles.container}>
+                <ProjectsNav></ProjectsNav>
+                {/* <div className={styles.images}>
 					<div id="jam-house">
 						<h2>Jam House</h2>
 						<Link href="portfolio/jam-house">
@@ -133,7 +132,7 @@ export default function Projects() {
 						</ul>
 					</div>
 				</div> */}
-			</section>
-		</div>
-	);
+            </section>
+        </div>
+    );
 }

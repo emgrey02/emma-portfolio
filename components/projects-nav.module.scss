@@ -1,40 +1,40 @@
 @use '../styles/variables.module.scss' as var;
 
 .container {
-  background-color: var.$mid-yellow;
+    background-color: var.$mid-yellow;
 
-  @media (min-width: 800px) {
-    width: fit-content;
-    height: 80vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
+    @media (min-width: 800px) {
+        width: fit-content;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }
 
 .nav {
-  display: flex;
-  width: 100%;
-  justify-content: space-around;
-  font-size: 1rem;
-  margin: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    font-size: 1rem;
+    margin: 0;
 
-  @media (min-width: 500px) {
-    font-size: 1.5rem;
-  }
+    @media (min-width: 500px) {
+        font-size: 1.5rem;
+    }
 
-  @media (min-width: 800px) {
-    flex-direction: column;
-    align-items: flex-end;
-  }
+    @media (min-width: 800px) {
+        flex-direction: column;
+        align-items: flex-end;
+    }
 }
 
 .listItem {
-  color: inherit;
-  font-size: inherit;
-  display: flex;
+    color: inherit;
+    font-size: inherit;
+    display: flex;
 
-  @media (min-width: 800px) {
-    width: 200px;
-  }
+    @media (min-width: 800px) {
+        width: 200px;
+    }
 }
