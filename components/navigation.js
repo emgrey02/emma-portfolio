@@ -1,6 +1,6 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import styles from './navigation.module.scss';
-import Image from 'next/image';
 
 export default function Navigation() {
     return (
@@ -12,7 +12,7 @@ export default function Navigation() {
                     className={styles.image}
                     height={100}
                     width={100}
-                    alt="Emma's logo, which is her initials 'e' and 'g' with three sun rays coming out towards the top right corner."
+                    alt="Emma's logo, which is her initials 'e' and 'g' with three sun rays coming out of the top right corner."
                 />
             </Link>
             <ul className={styles.nav}>

@@ -1,24 +1,41 @@
 {
-	"private": true,
-	"scripts": {
-		"dev": "next dev",
-		"build": "next build",
-		"start": "next start",
-		"lint": "next lint",
-    "prettier": "prettier --write ."
-	},
-	"dependencies": {
-		"@sendgrid/mail": "^7.7.0",
-		"next": "latest",
-		"react": "18.2.0",
-		"react-dom": "18.2.0",
-		"react-fast-marquee": "^1.6.0"
-	},
-	"devDependencies": {
-		"eslint": "8.45.0",
-		"eslint-config-next": "13.4.12",
-		"eslint-config-prettier": "^8.8.0",
-		"prettier": "^3.0.0",
-		"sass": "^1.59.3"
-	}
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "prettier": "prettier --write .",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "dependencies": {
+    "@sendgrid/mail": "^7.7.0",
+    "next": "latest",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-fast-marquee": "^1.6.0"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.22.9",
+    "@babel/preset-react": "^7.22.5",
+    "@storybook/addon-a11y": "^7.1.0",
+    "@storybook/addon-essentials": "^7.1.0",
+    "@storybook/addon-interactions": "^7.1.0",
+    "@storybook/addon-links": "^7.1.0",
+    "@storybook/addon-onboarding": "^1.0.8",
+    "@storybook/blocks": "^7.1.0",
+    "@storybook/nextjs": "^7.1.0",
+    "@storybook/react": "^7.1.0",
+    "@storybook/react-webpack5": "^7.1.0",
+    "@storybook/testing-library": "^0.2.0",
+    "eslint": "8.45.0",
+    "eslint-config-next": "13.4.12",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-storybook": "^0.6.13",
+    "prettier": "^3.0.0",
+    "prop-types": "^15.8.1",
+    "sass": "^1.64.1",
+    "storybook": "^7.1.0"
+  }
 }

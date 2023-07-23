@@ -1,7 +1,7 @@
-import styles from '../components/contactForm.module.scss';
 import { useRouter } from 'next/router';
+import styles from './ContactForm.module.scss';
 
-import Button from './button';
+import Button from '../Button';
 
 import { useState } from 'react';
 
@@ -76,6 +76,7 @@ export default function ContactForm() {
                         handleSubmit(e);
                     }}
                     text="submit"
+                    size="medium"
                 ></Button>
             </form>
         </div>

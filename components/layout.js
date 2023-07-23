@@ -1,10 +1,10 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import styles from './layout.module.scss';
 import Link from 'next/link';
-import Navigation from './navigation';
-import Footer from './footer';
 import { darkerGrotesque } from '../styles/fonts';
+import Footer from './footer';
+import styles from './layout.module.scss';
+import Navigation from './navigation';
 
 const name = 'emma grey';
 export const siteTitle = `emma grey`;
@@ -37,7 +37,7 @@ export default function Layout({ children, home }) {
                             className={styles.image}
                             height={700}
                             width={800}
-                            alt="Emma's logo, which is her initials 'e' and 'g' with three sun rays coming out towards the top right corner."
+                            alt="A sun with three rays coming out of it."
                         />
                         <h1 className={darkerGrotesque.className}>{name}</h1>
                         <style jsx>{`
@@ -76,7 +76,7 @@ export default function Layout({ children, home }) {
                                 className={styles.img}
                                 height={150}
                                 width={300}
-                                alt="the top half of a sun"
+                                alt="Emma Grey's full logo, which includes her name, her profession, and her small logo with her initials EG with three sun rays extending out from the top right corner"
                             />
                         </Link>
                     </div>
