@@ -1,0 +1,16 @@
+@use '/styles/variables.module.scss' as var;
+
+.container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.link {
+  color: var.$blue;
+  width: fit-content;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

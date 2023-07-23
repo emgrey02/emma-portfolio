@@ -1,9 +1,27 @@
 import Image from 'next/image';
 import { darkerGrotesque } from '../../styles/fonts';
+import Project from '../Project';
 import ProjectsNav from '../ProjectsNav';
 import styles from './Projects.module.scss';
 
 export default function Projects() {
+    let title = 'jam house';
+    let badges = [
+        { text: 'web developer', theme: 'role' },
+        { text: 'ui/ux designer', theme: 'role' },
+        { text: 'tone.js', theme: 'tech' },
+        { text: 'html', theme: 'tech' },
+        { text: 'scss', theme: 'tech' },
+        { text: 'javascript', theme: 'tech' },
+        { text: 'netlify', theme: 'tech' },
+        { text: 'github', theme: 'tech' },
+    ];
+
+    let links = {
+        live: 'jam-house.netlify.app',
+        code: 'github.com/emgrey02/idmx-music-app-plus',
+    };
+
     return (
         <div>
             <div className={styles.header}>
@@ -25,7 +43,20 @@ export default function Projects() {
             </div>
             <section className={styles.container}>
                 <ProjectsNav></ProjectsNav>
-                {/* <div className={styles.images}>
+                <div className={styles.projCont}>
+                    <Project title={title} badges={badges} links={links} />
+                    <Project title={title} badges={badges} links={links} />
+                    <Project title={title} badges={badges} links={links} />
+                    <Project title={title} badges={badges} links={links} />
+                    <Project title={title} badges={badges} links={links} />
+                </div>
+            </section>
+        </div>
+    );
+}
+
+{
+    /* <div className={styles.images}>
 					<div id="jam-house">
 						<h2>Jam House</h2>
 						<Link href="portfolio/jam-house">
@@ -130,8 +161,5 @@ export default function Projects() {
 							<li>netlify</li>
 						</ul>
 					</div>
-				</div> */}
-            </section>
-        </div>
-    );
+				</div> */
 }

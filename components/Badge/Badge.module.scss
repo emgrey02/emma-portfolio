@@ -1,0 +1,18 @@
+@use '/styles/variables.module.scss' as var;
+
+.badge {
+  display: grid;
+  place-items: center;
+  padding: 5px 10px;
+  color: var.$black;
+  border: 1px solid black;
+  width: fit-content;
+}
+
+.tech {
+  border-color: var.$dark-yellow;
+}
+
+.role {
+  border-color: var.$orange;
+}
