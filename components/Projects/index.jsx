@@ -1,8 +1,7 @@
-import ProjectsNav from './projects-nav';
 import Image from 'next/image';
-import styles from './projects.module.scss';
-import { darkerGrotesque } from '../styles/fonts';
-import '../styles/variables.module.scss';
+import { darkerGrotesque } from '../../styles/fonts';
+import ProjectsNav from '../ProjectsNav';
+import styles from './Projects.module.scss';
 
 export default function Projects() {
     return (

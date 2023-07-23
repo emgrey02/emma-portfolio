@@ -1,10 +1,10 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
-import { darkerGrotesque } from '../styles/fonts';
-import Footer from './footer';
+import { darkerGrotesque } from '../../styles/fonts';
+import Footer from '../Footer';
+import Navigation from '../MainNav';
 import styles from './layout.module.scss';
-import Navigation from './navigation';
 
 const name = 'emma grey';
 export const siteTitle = `emma grey`;
