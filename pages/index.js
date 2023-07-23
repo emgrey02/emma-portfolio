@@ -1,13 +1,13 @@
 import Head from 'next/head';
+import Marquee from 'react-fast-marquee';
+import Footer from '../components/Footer';
+import Projects from '../components/Projects';
 import Layout, { siteTitle } from '../components/layout';
 import styles from '../styles/Home.module.scss';
-import Projects from '../components/projects';
-import Footer from '../components/footer';
-import Marquee from 'react-fast-marquee';
 
 export default function Home() {
     return (
-        <div>
+        <>
             <Layout home>
                 <Head>
                     <title>{siteTitle}</title>
@@ -18,10 +18,8 @@ export default function Home() {
                     <div>Musician |</div>
                 </Marquee>
             </Layout>
-            <section>
-                <Projects></Projects>
-            </section>
+            <Projects></Projects>
             <Footer></Footer>
-        </div>
+        </>
     );
 }

@@ -11,7 +11,7 @@ export const siteTitle = `emma grey`;
 
 export default function Layout({ children, home }) {
     return (
-        <div>
+        <>
             <Head>
                 <link rel="icon" href="/eg-logo.svg" />
                 <meta
@@ -89,6 +89,6 @@ export default function Layout({ children, home }) {
                 </div>
             )}
             {!home && <Footer></Footer>}
-        </div>
+        </>
     );
 }

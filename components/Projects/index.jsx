@@ -23,7 +23,7 @@ export default function Projects() {
     };
 
     return (
-        <div>
+        <section>
             <div className={styles.header}>
                 <h2 className={darkerGrotesque.className}>portfolio</h2>
                 <Image
@@ -41,7 +41,7 @@ export default function Projects() {
                     }
                 `}</style>
             </div>
-            <section className={styles.container}>
+            <div className={styles.container}>
                 <ProjectsNav></ProjectsNav>
                 <div className={styles.projCont}>
                     <Project title={title} badges={badges} links={links} />
@@ -50,8 +50,8 @@ export default function Projects() {
                     <Project title={title} badges={badges} links={links} />
                     <Project title={title} badges={badges} links={links} />
                 </div>
-            </section>
-        </div>
+            </div>
+        </section>
     );
 }
 
