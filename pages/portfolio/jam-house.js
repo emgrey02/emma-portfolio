@@ -1,8 +1,8 @@
 import Head from 'next/head';
-import Layout from '../../components/layout';
 import Image from 'next/image';
+import Button from '../../components/Button';
+import Layout from '../../components/Layout';
 import styles from '../../styles/Home.module.scss';
-import Button from '../../components/button';
 
 export default function JamHouse() {
     return (

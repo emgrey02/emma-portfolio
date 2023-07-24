@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { darkerGrotesque } from '../../styles/fonts';
 import Footer from '../Footer';
 import Navigation from '../MainNav';
-import styles from './layout.module.scss';
+import styles from './Layout.module.scss';
 
 const name = 'emma grey';
 export const siteTitle = `emma grey`;

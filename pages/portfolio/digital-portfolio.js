@@ -1,6 +1,6 @@
 import Head from 'next/head';
-import Layout from '../../components/layout';
-import Button from '../../components/button';
+import Button from '../../components/Button';
+import Layout from '../../components/Layout';
 
 export default function DCG() {
     return (
