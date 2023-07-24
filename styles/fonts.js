@@ -1,7 +1,7 @@
-import { Questrial, Darker_Grotesque } from 'next/font/google';
+import { Darker_Grotesque, Questrial } from 'next/font/google';
 
 const darkerGrotesque = Darker_Grotesque({
-    weight: '700',
+    weight: ['500', '700'],
     subsets: ['latin'],
     variable: '--title-font',
 });
@@ -12,4 +12,4 @@ const questrial = Questrial({
     variable: '--par-font',
 });
 
-export { questrial, darkerGrotesque };
+export { darkerGrotesque, questrial };

@@ -9,12 +9,13 @@
                 { "text": "html", "theme": "tech" },
                 { "text": "scss", "theme": "tech" },
                 { "text": "javascript", "theme": "tech" },
+                { "text": "figma", "theme": "tech" },
                 { "text": "netlify", "theme": "tech" },
                 { "text": "github", "theme": "tech" }
             ],
             "links": {
-                "live": "jam-house.netlify.app",
-                "code": "github.com/emgrey02/idmx-music-app-plus"
+                "live": "https://jam-house.netlify.app",
+                "code": "https://github.com/emgrey02/idmx-music-app-plus"
             },
             "image": "/images/jam-house-logo.svg"
         },
@@ -27,12 +28,79 @@
                 { "text": "wix", "theme": "tech" },
                 { "text": "wix events", "theme": "tech" },
                 { "text": "wix email marketing", "theme": "tech" },
+                { "text": "seo", "theme": "tech" },
+                { "text": "figma", "theme": "tech" },
                 { "text": "airtable", "theme": "tech" }
             ],
             "links": {
                 "live": "https://diversitycommunitygroup.com"
             },
             "image": "/images/sunset-dcg-logo.svg"
+        },
+        {
+            "title": "life nailed",
+            "badges": [
+                { "text": "web developer", "theme": "role" },
+                { "text": "wix", "theme": "tech" },
+                { "text": "figma", "theme": "tech" },
+                { "text": "seo", "theme": "tech" }
+            ],
+            "links": {
+                "live": "https://lifenailed.com"
+            },
+            "image": "/images/life-nailed-logo.png"
+        },
+        {
+            "title": "digital portfolio",
+            "badges": [
+                { "text": "web developer", "theme": "role" },
+                { "text": "ui/ux designer", "theme": "role" },
+                { "text": "next.js", "theme": "tech" },
+                { "text": "scss", "theme": "tech" },
+                { "text": "javascript", "theme": "tech" },
+                { "text": "json", "theme": "tech" },
+                { "text": "netlify", "theme": "tech" },
+                { "text": "figma", "theme": "tech" },
+                { "text": "storybook", "theme": "tech" }
+            ],
+            "links": {
+                "live": "https://emmagrey.netlify.app",
+                "code": "https://github.com/emgrey02/emma-portfolio"
+            },
+            "image": "/images/eg-logo-light.svg"
+        },
+        {
+            "title": "drawing board",
+            "badges": [
+                { "text": "web developer", "theme": "role" },
+                { "text": "ui designer", "theme": "role" },
+                { "text": "scss", "theme": "tech" },
+                { "text": "github", "theme": "tech" },
+                { "text": "open-source", "theme": "tech" }
+            ],
+            "links": {
+                "live": "https://stylestage.dev/styles/drawing-board/",
+                "code": "https://github.com/emgrey02/style-stage-emgrey02"
+            },
+            "image": "/images/stylestage-logo.png"
+        },
+        {
+            "title": "digital portfolio [old]",
+            "badges": [
+                { "text": "web developer", "theme": "role" },
+                { "text": "ui/ux designer", "theme": "role" },
+                { "text": "javascript", "theme": "tech" },
+                { "text": "css", "theme": "tech" },
+                { "text": "html", "theme": "tech" },
+                { "text": "github", "theme": "tech" },
+                { "text": "github pages", "theme": "tech" },
+                { "text": "figma", "theme": "tech" }
+            ],
+            "links": {
+                "live": "https://emgrey02.github.io",
+                "code": "https://github.com/emgrey02/emgrey02.github.io"
+            },
+            "image": "/images/iconsquid.svg"
         }
     ],
     "designs": [],
