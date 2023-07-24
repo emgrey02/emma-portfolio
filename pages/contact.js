@@ -1,8 +1,8 @@
-import Layout from '../components/layout';
-import ContactForm from '../components/contact-form';
-import utilStyles from '../styles/utils.module.scss';
 import Head from 'next/head';
+import ContactForm from '../components/ContactForm';
+import Layout from '../components/Layout';
 import { darkerGrotesque } from '../styles/fonts';
+import utilStyles from '../styles/utils.module.scss';
 
 export default function Contact() {
     return (

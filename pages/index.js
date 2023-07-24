@@ -1,8 +1,8 @@
 import Head from 'next/head';
 import Marquee from 'react-fast-marquee';
 import Footer from '../components/Footer';
+import Layout, { siteTitle } from '../components/Layout';
 import Projects from '../components/Projects';
-import Layout, { siteTitle } from '../components/layout';
 import styles from '../styles/Home.module.scss';
 
 export default function Home() {

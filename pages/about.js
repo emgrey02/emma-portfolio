@@ -1,5 +1,5 @@
-import Layout from '../components/layout';
 import Head from 'next/head';
+import Layout from '../components/Layout';
 import { darkerGrotesque } from '../styles/fonts';
 
 export default function About() {
