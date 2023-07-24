@@ -1,0 +1,41 @@
+{
+    "websites": [
+        {
+            "title": "jam house",
+            "badges": [
+                { "text": "web developer", "theme": "role" },
+                { "text": "ui/ux designer", "theme": "role" },
+                { "text": "tone.js", "theme": "tech" },
+                { "text": "html", "theme": "tech" },
+                { "text": "scss", "theme": "tech" },
+                { "text": "javascript", "theme": "tech" },
+                { "text": "netlify", "theme": "tech" },
+                { "text": "github", "theme": "tech" }
+            ],
+            "links": {
+                "live": "jam-house.netlify.app",
+                "code": "github.com/emgrey02/idmx-music-app-plus"
+            },
+            "image": "/images/jam-house-logo.svg"
+        },
+        {
+            "title": "diversity community group",
+            "badges": [
+                { "text": "web developer", "theme": "role" },
+                { "text": "ui designer", "theme": "role" },
+                { "text": "project manager", "theme": "role" },
+                { "text": "wix", "theme": "tech" },
+                { "text": "wix events", "theme": "tech" },
+                { "text": "wix email marketing", "theme": "tech" },
+                { "text": "airtable", "theme": "tech" }
+            ],
+            "links": {
+                "live": "https://diversitycommunitygroup.com"
+            },
+            "image": "/images/sunset-dcg-logo.svg"
+        }
+    ],
+    "designs": [],
+    "art": [],
+    "music": []
+}

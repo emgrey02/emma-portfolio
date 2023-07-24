@@ -1,26 +1,47 @@
 import Image from 'next/image';
+import { useState } from 'react';
 import { darkerGrotesque } from '../../styles/fonts';
 import Project from '../Project';
 import ProjectsNav from '../ProjectsNav';
 import styles from './Projects.module.scss';
+import ProjectList from '/lib/data.json';
 
 export default function Projects() {
-    let title = 'jam house';
-    let badges = [
-        { text: 'web developer', theme: 'role' },
-        { text: 'ui/ux designer', theme: 'role' },
-        { text: 'tone.js', theme: 'tech' },
-        { text: 'html', theme: 'tech' },
-        { text: 'scss', theme: 'tech' },
-        { text: 'javascript', theme: 'tech' },
-        { text: 'netlify', theme: 'tech' },
-        { text: 'github', theme: 'tech' },
-    ];
+    const [currentPage, setCurrentPage] = useState('websites');
 
-    let links = {
-        live: 'jam-house.netlify.app',
-        code: 'github.com/emgrey02/idmx-music-app-plus',
+    const handleChangePage = (e) => {
+        let page = e.target.innerText;
+        setCurrentPage(page);
+        sortProjects(page);
     };
+
+    let sortedProjects;
+    let displayedProjects;
+
+    const sortProjects = (pageCat) => {
+        sortedProjects = ProjectList[pageCat];
+
+        displayedProjects =
+            sortedProjects.length > 0 ? (
+                sortedProjects.map((project, index) => {
+                    return (
+                        <Project
+                            key={index}
+                            title={project.title}
+                            badges={project.badges}
+                            links={project.links}
+                            image={project.image}
+                        ></Project>
+                    );
+                })
+            ) : (
+                <div> No projects to display</div>
+            );
+    };
+
+    sortProjects(currentPage);
+
+    let categories = ['websites', 'designs', 'art', 'music'];
 
     return (
         <section>
@@ -42,14 +63,12 @@ export default function Projects() {
                 `}</style>
             </div>
             <div className={styles.container}>
-                <ProjectsNav></ProjectsNav>
-                <div className={styles.projCont}>
-                    <Project title={title} badges={badges} links={links} />
-                    <Project title={title} badges={badges} links={links} />
-                    <Project title={title} badges={badges} links={links} />
-                    <Project title={title} badges={badges} links={links} />
-                    <Project title={title} badges={badges} links={links} />
-                </div>
+                <ProjectsNav
+                    page={currentPage}
+                    onClick={handleChangePage}
+                    categories={categories}
+                ></ProjectsNav>
+                <div className={styles.projCont}>{displayedProjects}</div>
             </div>
         </section>
     );

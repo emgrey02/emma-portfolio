@@ -1,18 +1,13 @@
-import React, { useState } from 'react';
 import ProjectNavButton from '../ProjectNavButton';
 import styles from './ProjectsNav.module.scss';
 
-export default function ProjectsNav() {
-    const [currentPage, setCurrentPage] = useState({ category: 'websites' });
-
-    let categories = ['websites', 'designs', 'art', 'music'];
-
+export default function ProjectsNav({ page, onClick, categories }) {
     const navItems = categories.map((category, index) => (
         <li key={index} className={styles.listItem}>
             <ProjectNavButton
                 text={category}
-                onClick={() => setCurrentPage({ category })}
-                currentPage={currentPage.category}
+                onClick={onClick}
+                currentPage={page}
             ></ProjectNavButton>
         </li>
     ));

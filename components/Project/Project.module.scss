@@ -21,17 +21,32 @@
 }
 
 .title {
-  font-size: 1.2rem;
+  font-size: clamp(1.5rem, 0.5714rem + 1.9048vw, 2rem);
   text-align: start;
+  margin: 0;
 }
 
 .badges {
   display: flex;
-  gap: 20px;
+  gap: 8px;
   flex-wrap: wrap;
+  font-size: clamp(.8rem, -0.4286rem + 1.9048vw, 1rem);
 }
 
 .links {
-  display: flex;
-  flex-direction: column;
+  display: inline-grid;
+  grid-template-columns: max-content auto;
+  grid-gap: 20px;
+  font-size: clamp(.8rem, -0.4286rem + 1.9048vw, 1rem);
+
+  @media (max-width: 1200px) {
+    grid-template-columns: 1fr;
+    grid-gap: 0px;
+  }
+}
+
+.image {
+  border: 1px solid var.$mid-yellow;
+  border-radius: 100%;
+  padding: .2em;
 }

@@ -35,6 +35,7 @@ export default function ContactForm() {
                 className={styles.form}
                 id="send-message"
                 aria-label="Send a message to Emma"
+                netlify
             >
                 <label htmlFor="name">name</label>
                 <input
