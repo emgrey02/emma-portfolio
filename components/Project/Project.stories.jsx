@@ -22,5 +22,6 @@ export const Default = {
             live: 'jam-house.netlify.app',
             code: 'github.com/emgrey02/idmx-music-app-plus',
         },
+        image: '/images/jam-house-logo.svg',
     },
 };
