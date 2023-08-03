@@ -31,6 +31,7 @@ export default function Projects() {
                             badges={project.badges}
                             links={project.links}
                             image={project.image}
+                            cat={pageCat}
                         ></Project>
                     );
                 })

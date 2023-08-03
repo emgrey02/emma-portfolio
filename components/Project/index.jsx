@@ -5,7 +5,7 @@ import { CodeLink } from '../CodeLink';
 import { LiveLink } from '../LiveLink';
 import styles from './Project.module.scss';
 
-export default function Project({ title, image, badges, links }) {
+export default function Project({ title, image, badges, links, cat }) {
     const badgeGroup = badges.map((badge, index) => {
         return (
             <li key={index}>
@@ -13,6 +13,27 @@ export default function Project({ title, image, badges, links }) {
             </li>
         );
     });
+
+    if (cat === 'websites') {
+        cat = 'web';
+    } else if (cat === 'art') {
+        cat = 'art';
+    } else {
+        cat = 'other';
+    }
+
+    let dimh;
+    let dimw;
+    let altT;
+
+    if (cat === 'web') {
+        dimh = dimw = 80;
+        altT = `${title} logo`;
+    } else {
+        dimw = 2000;
+        dimh = 1400;
+        altT = `${title}`;
+    }
 
     let liveLink;
     let codeLink;
@@ -39,7 +60,7 @@ export default function Project({ title, image, badges, links }) {
     return (
         <div className={styles.container}>
             <div className={styles.textCont}>
-                <div className={styles.titleCont}>
+                <div className={`${styles.titleCont} ${styles[`${cat}`]}`}>
                     <h3
                         className={`${styles.title} ${darkerGrotesque.className}`}
                     >
@@ -48,9 +69,9 @@ export default function Project({ title, image, badges, links }) {
                     <Image
                         className={styles.image}
                         src={image}
-                        alt={`${title} snippet`}
-                        width={80}
-                        height={80}
+                        alt={altT}
+                        width={dimw}
+                        height={dimh}
                     ></Image>
                 </div>
 

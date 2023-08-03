@@ -101,9 +101,150 @@
                 "code": "https://github.com/emgrey02/emgrey02.github.io"
             },
             "image": "/images/iconsquid.svg"
+        },
+        {
+            "title": "RVCC M'App",
+            "badges": [
+                { "text": "web developer", "theme": "role" },
+                { "text": "ui/ux designer", "theme": "role" },
+                { "text": "javascript", "theme": "tech" },
+                { "text": "scss", "theme": "tech" },
+                { "text": "json", "theme": "tech" },
+                { "text": "html", "theme": "tech" },
+                { "text": "github", "theme": "tech" },
+                { "text": "netlify", "theme": "tech" },
+                { "text": "figma", "theme": "tech" }
+            ],
+            "links": {
+                "live": "https://rvcc-mapp.netlify.app",
+                "code": "https://github.com/RVCC-IDMX/campus-maps"
+            },
+            "image": "/images/rvcc-mapp-icon.svg"
         }
     ],
-    "designs": [],
-    "art": [],
+    "designs": [
+        {
+            "title": "Contemporary PostModernism Poster",
+            "badges": [
+                { "text": "visual designer", "theme": "role" },
+                { "text": "adobe inDesign", "theme": "tech" },
+                { "text": "adobe photoshop", "theme": "tech" },
+                { "text": "adobe illustrator", "theme": "tech" }
+            ],
+            "image": "/images/designs/cont-postmod-poster.png"
+        },
+        {
+            "title": "Web Accessibility Poster",
+            "badges": [
+                { "text": "visual designer", "theme": "role" },
+                { "text": "adobe inDesign", "theme": "tech" },
+                { "text": "adobe photoshop", "theme": "tech" },
+                { "text": "adobe illustrator", "theme": "tech" }
+            ],
+            "image": "/images/designs/web-acc-poster.png"
+        },
+        {
+            "title": "Magazine Cover",
+            "badges": [
+                { "text": "visual designer", "theme": "role" },
+                { "text": "adobe inDesign", "theme": "tech" },
+                { "text": "adobe photoshop", "theme": "tech" },
+                { "text": "adobe illustrator", "theme": "tech" }
+            ],
+            "image": "/images/designs/mag.jpg"
+        },
+        {
+            "title": "Visual Identity System",
+            "badges": [
+                { "text": "visual designer", "theme": "role" },
+                { "text": "adobe inDesign", "theme": "tech" },
+                { "text": "adobe photoshop", "theme": "tech" },
+                { "text": "adobe illustrator", "theme": "tech" }
+            ],
+            "image": "/images/designs/visual-identity.png"
+        }
+    ],
+    "art": [
+        {
+            "title": "pattern repeat - booklet cover",
+            "badges": [
+                { "text": "visual designer", "theme": "role" },
+                { "text": "adobe inDesign", "theme": "tech" },
+                { "text": "adobe photoshop", "theme": "tech" },
+                { "text": "adobe illustrator", "theme": "tech" }
+            ],
+            "image": "/images/art/pattern-repeat-eg.jpg"
+        },
+        {
+            "title": "booklet - scleroderma skin",
+            "badges": [
+                { "text": "visual designer", "theme": "role" },
+                { "text": "adobe inDesign", "theme": "tech" },
+                { "text": "adobe photoshop", "theme": "tech" },
+                { "text": "adobe illustrator", "theme": "tech" }
+            ],
+            "image": "/images/art/booklet.jpg"
+        },
+        {
+            "title": "stencil work",
+            "badges": [
+                { "text": "visual designer", "theme": "role" },
+                { "text": "adobe inDesign", "theme": "tech" },
+                { "text": "adobe photoshop", "theme": "tech" },
+                { "text": "adobe illustrator", "theme": "tech" }
+            ],
+            "image": "/images/art/stencils.jpg"
+        },
+        {
+            "title": "shapes",
+            "badges": [
+                { "text": "visual designer", "theme": "role" },
+                { "text": "adobe inDesign", "theme": "tech" },
+                { "text": "adobe photoshop", "theme": "tech" },
+                { "text": "adobe illustrator", "theme": "tech" }
+            ],
+            "image": "/images/art/final-shapes-eg.jpg"
+        },
+        {
+            "title": "texture greyscale",
+            "badges": [
+                { "text": "visual designer", "theme": "role" },
+                { "text": "adobe inDesign", "theme": "tech" },
+                { "text": "adobe photoshop", "theme": "tech" },
+                { "text": "adobe illustrator", "theme": "tech" }
+            ],
+            "image": "/images/art/actual-texture-greyscale.jpg"
+        },
+        {
+            "title": "graphic gradations",
+            "badges": [
+                { "text": "visual designer", "theme": "role" },
+                { "text": "adobe inDesign", "theme": "tech" },
+                { "text": "adobe photoshop", "theme": "tech" },
+                { "text": "adobe illustrator", "theme": "tech" }
+            ],
+            "image": "/images/art/graphic-gradations-eg.jpg"
+        },
+        {
+            "title": "digital greyscale",
+            "badges": [
+                { "text": "visual designer", "theme": "role" },
+                { "text": "adobe inDesign", "theme": "tech" },
+                { "text": "adobe photoshop", "theme": "tech" },
+                { "text": "adobe illustrator", "theme": "tech" }
+            ],
+            "image": "/images/art/digital-greyscale-eg.jpg"
+        },
+        {
+            "title": "line drawing",
+            "badges": [
+                { "text": "visual designer", "theme": "role" },
+                { "text": "adobe inDesign", "theme": "tech" },
+                { "text": "adobe photoshop", "theme": "tech" },
+                { "text": "adobe illustrator", "theme": "tech" }
+            ],
+            "image": "/images/art/line-drawing.jpg"
+        }
+    ],
     "music": []
 }
