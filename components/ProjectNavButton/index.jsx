@@ -6,12 +6,10 @@ export default function ProjectNavButton({ onClick, text, currentPage }) {
     let state = selected ? 'selected' : 'default';
 
     return (
-        <button
-            type="button"
-            onClick={onClick}
-            className={`${styles.button} ${styles[`${state}`]}`}
-        >
-            {text}
-        </button>
+        <li className={`${styles.listItem} ${styles[`${state}`]}`}>
+            <button type="button" onClick={onClick} className={styles.button}>
+                {text}
+            </button>
+        </li>
     );
 }

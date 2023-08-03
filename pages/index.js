@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Footer from '../components/Footer';
 import Layout, { siteTitle } from '../components/Layout';
 import Projects from '../components/Projects';
+import styles from '../styles/Home.module.scss';
 
 export default function Home() {
     return (
@@ -10,11 +11,18 @@ export default function Home() {
                 <Head>
                     <title>{siteTitle}</title>
                 </Head>
-                {/* <Marquee className={styles.marquee}>
-                    <div>| Front End Web Developer</div>
-                    <div>Interface Designer </div>
-                    <div>Musician |</div>
-                </Marquee> */}
+                <div className={styles.marquee}>
+                    <div className={styles.group1}>
+                        <span>front end web developer</span>
+                        <span>interface designer </span>
+                        <span>musician</span>
+                    </div>
+                    <div className={styles.group2}>
+                        <span>front end web developer</span>
+                        <span>interface designer </span>
+                        <span>musician</span>
+                    </div>
+                </div>
             </Layout>
             <Projects></Projects>
             <Footer></Footer>

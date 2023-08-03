@@ -1,12 +1,11 @@
 import Layout from '../components/Layout';
-import styles from '../styles/Home.module.scss';
 import { darkerGrotesque } from '../styles/fonts';
 
 export default function Resume() {
     return (
         <Layout>
             <h1 className={darkerGrotesque.className}>Resume</h1>
-            <div className={styles.grid}>
+            <div>
                 <div>
                     <p>
                         Completing a degree in Interface Design & Development

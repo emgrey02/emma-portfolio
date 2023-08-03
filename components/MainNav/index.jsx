@@ -4,7 +4,7 @@ import styles from './MainNav.module.scss';
 
 export default function Navigation() {
     return (
-        <div className={styles.container}>
+        <nav className={styles.container}>
             <Link className={styles.bkgd} href="/">
                 <Image
                     priority
@@ -26,6 +26,6 @@ export default function Navigation() {
                     <Link href="/resume">resume</Link>
                 </li>
             </ul>
-        </div>
+        </nav>
     );
 }

@@ -1,24 +1,43 @@
 @use '/styles/variables.module.scss' as var;
 
 .button {
-  border: none;
-  font-family: inherit;
-  font-size: inherit;
-  cursor: pointer;
-  height: 100px;
-  color: inherit;
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    height: 100px;
+    color: inherit;
+    margin: auto;
+    background: transparent;
 
-  @media (min-width: 800px) {
+    @media (min-width: 800px) {
+        width: 100%;
+        flex-shrink: 0;
+        text-align: end;
+    }
+}
+
+.listItem {
+    color: inherit;
+    font-size: inherit;
+    display: grid;
+    place-items: center;
     width: 100%;
-    flex-shrink: 0;
-    text-align: end;
-  }
+    background-color: transparent;
+
+    @media (min-width: 800px) {
+        width: 200px;
+    }
 }
 
 .default {
-  background-color: var.$mid-yellow;
+    background-color: var.$mid-yellow;
 }
 
 .selected {
-  background-color: var.$bone;
+    background-color: transparent;
+
+    @media (min-width: 800px) {
+        background-color: transparent;
+    }
 }
