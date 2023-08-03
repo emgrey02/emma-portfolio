@@ -5,6 +5,7 @@ body {
     line-height: 1.5;
     font-size: 1.2rem;
     scroll-behavior: smooth;
+    overflow-x: hidden;
     background-color: #e4d9c7;
     background-image: url('https://res.cloudinary.com/greypse/image/upload/v1691028179/grain_anhr1j.png');
 }
