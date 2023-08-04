@@ -1,3 +1,5 @@
+@use '/styles/variables.module.scss' as var;
+
 .container {
   display: flex;
   flex-direction: column;
@@ -13,12 +15,17 @@
   align-self: center;
   align-items: center;
   justify-content: space-between;
-  width: 300px;
+  width: 230px;
   gap: .5em;
+
 }
 
 .text {
-  text-align: center;
-  width: 150px;
+  text-align: start;
+  padding-inline-start: .3em;
+  width: 100%;
   margin: 0;
+  border: .12em dotted var.$grey;
+  box-shadow: -1px 1px 0 var.$blue;
+  font-size: 1rem;
 }

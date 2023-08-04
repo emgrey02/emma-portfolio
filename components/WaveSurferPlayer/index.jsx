@@ -53,7 +53,7 @@ export const WaveSurferPlayer = (props) => {
             wavesurfer.on('play', () => setIsPlaying(true)),
             wavesurfer.on('pause', () => setIsPlaying(false)),
             wavesurfer.on('timeupdate', (currentTime) =>
-                setCurrentTime(currentTime),
+                setCurrentTime(Math.floor(currentTime * 100) / 100),
             ),
         ];
 

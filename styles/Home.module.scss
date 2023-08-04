@@ -1,36 +1,37 @@
 @use '/styles/variables.module.scss' as var;
 
 .marquee {
-    position: absolute;
-    display: flex;
-    gap: 5rem;
-    border-top: 2px dashed var.$grey;
-    border-bottom: 2px dashed var.$grey;
-    width: 100%;
-    margin: 0;
-    padding: 0;
+  position: absolute;
+  display: flex;
+  gap: 5rem;
+  border-top: 2px dashed var.$grey;
+  border-bottom: 2px dashed var.$grey;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 .group1,
 .group2 {
-    display: flex;
-    gap: 5rem;
-    padding-left: 100%;
-    animation: move infinite 20s linear;
+  display: flex;
+  gap: 5rem;
+  padding-left: 100%;
+  animation: move infinite 20s linear;
 
-    span {
-        width: max-content;
-    }
+  span {
+    width: max-content;
+  }
 
-    @media (prefers-reduced-motion) {
-        animation-iteration-count: 1;
-        animation-duration: 0.01;
-        transform: none;
-    }
+  @media (prefers-reduced-motion) {
+    animation-iteration-count: 1;
+    animation-duration: 0.01;
+    transform: none;
+  }
 }
 
 @keyframes move {
-    100% {
-        transform: translateX(-100%);
-    }
+  100% {
+    transform: translateX(-100%);
+  }
 }
