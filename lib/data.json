@@ -124,7 +124,7 @@
     ],
     "designs": [
         {
-            "title": "Contemporary PostModernism Poster",
+            "title": "contemporary postmodernism poster",
             "badges": [
                 { "text": "visual designer", "theme": "role" },
                 { "text": "adobe inDesign", "theme": "tech" },
@@ -134,7 +134,7 @@
             "image": "/images/designs/cont-postmod-poster.png"
         },
         {
-            "title": "Web Accessibility Poster",
+            "title": "web accessibility poster",
             "badges": [
                 { "text": "visual designer", "theme": "role" },
                 { "text": "adobe inDesign", "theme": "tech" },
@@ -144,7 +144,7 @@
             "image": "/images/designs/web-acc-poster.png"
         },
         {
-            "title": "Magazine Cover",
+            "title": "magazine cover",
             "badges": [
                 { "text": "visual designer", "theme": "role" },
                 { "text": "adobe inDesign", "theme": "tech" },
@@ -154,7 +154,7 @@
             "image": "/images/designs/mag.jpg"
         },
         {
-            "title": "Visual Identity System",
+            "title": "visual identity system",
             "badges": [
                 { "text": "visual designer", "theme": "role" },
                 { "text": "adobe inDesign", "theme": "tech" },
@@ -246,5 +246,86 @@
             "image": "/images/art/line-drawing.jpg"
         }
     ],
-    "music": []
+    "music": [
+        {
+            "title": "01",
+            "badges": [
+                { "text": "music production", "theme": "role" },
+                { "text": "ableton", "theme": "tech" }
+            ],
+            "audio": "/music/athing.mp3"
+        },
+        {
+            "title": "02",
+            "badges": [
+                { "text": "music production", "theme": "role" },
+                { "text": "ableton", "theme": "tech" }
+            ],
+            "audio": "/music/dawelakfjd.mp3"
+        },
+        {
+            "title": "03",
+            "badges": [
+                { "text": "music production", "theme": "role" },
+                { "text": "ableton", "theme": "tech" }
+            ],
+            "audio": "/music/dillabeat.mp3"
+        },
+        {
+            "title": "04",
+            "badges": [
+                { "text": "music production", "theme": "role" },
+                { "text": "ableton", "theme": "tech" }
+            ],
+            "audio": "/music/firstone.mp3"
+        },
+        {
+            "title": "05",
+            "badges": [
+                { "text": "music production", "theme": "role" },
+                { "text": "ableton", "theme": "tech" }
+            ],
+            "audio": "/music/holiday_boop.wav"
+        },
+        {
+            "title": "06",
+            "badges": [
+                { "text": "music production", "theme": "role" },
+                { "text": "ableton", "theme": "tech" }
+            ],
+            "audio": "/music/jcole.mp3"
+        },
+        {
+            "title": "07",
+            "badges": [
+                { "text": "music production", "theme": "role" },
+                { "text": "ableton", "theme": "tech" }
+            ],
+            "audio": "/music/nylonbeat.mp3"
+        },
+        {
+            "title": "08",
+            "badges": [
+                { "text": "music production", "theme": "role" },
+                { "text": "ableton", "theme": "tech" }
+            ],
+            "audio": "/music/secondgifsong.mp3"
+        },
+        {
+            "title": "09",
+            "badges": [
+                { "text": "music production", "theme": "role" },
+                { "text": "ableton", "theme": "tech" }
+            ],
+            "audio": "/music/something.mp3"
+        },
+        {
+            "title": "11",
+            "badges": [
+                { "text": "music production", "theme": "role" },
+                { "text": "ableton", "theme": "tech" }
+            ],
+            "audio": "/music/creepysong.mp3"
+        }
+    ]
 }

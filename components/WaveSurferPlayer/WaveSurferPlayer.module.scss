@@ -1,0 +1,24 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn {
+  margin: auto;
+}
+
+.textCont {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  align-items: center;
+  justify-content: space-between;
+  width: 300px;
+  gap: .5em;
+}
+
+.text {
+  text-align: center;
+  width: 150px;
+  margin: 0;
+}

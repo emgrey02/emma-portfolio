@@ -24,7 +24,8 @@
   }
 
   &.other,
-  &.art {
+  &.art,
+  &.music {
     flex-direction: column;
   }
 
@@ -56,6 +57,18 @@
   }
 }
 
+.audio {
+  display: none;
+}
+
+.music .audio {
+  display: block;
+  align-self: center;
+  width: 600px;
+  height: 100px;
+  z-index: 3;
+}
+
 .other .image {
   width: 100%;
   height: auto;
@@ -71,4 +84,8 @@
   border: 1px solid var.$mid-yellow;
   padding: 0.2em;
   align-self: center;
+}
+
+.music .image {
+  display: none;
 }

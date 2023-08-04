@@ -32,6 +32,7 @@ export default function Projects() {
                             links={project.links}
                             image={project.image}
                             cat={pageCat}
+                            audio={project.audio}
                         ></Project>
                     );
                 })
