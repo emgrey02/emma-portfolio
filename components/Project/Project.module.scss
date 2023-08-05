@@ -21,15 +21,29 @@
   &.web {
     justify-content: space-between;
     align-items: center;
+
+    .imgCont {
+      position: relative;
+      width: 80px;
+      height: 80px;
+    }
   }
 
-  &.other,
+  &.design,
   &.art,
   &.music {
     flex-direction: column;
+
+    .imgCont {
+      position: relative;
+      height: auto;
+      width: auto;
+    }
   }
 
 }
+
+
 
 .title {
   font-size: clamp(1.5rem, 0.5714rem + 1.9048vw, 2rem);
@@ -69,7 +83,7 @@
   z-index: 3;
 }
 
-.other .image {
+.design .image {
   width: 100%;
   height: auto;
 }
@@ -84,8 +98,4 @@
   border: 1px solid var.$mid-yellow;
   padding: 0.2em;
   align-self: center;
-}
-
-.music .image {
-  display: none;
 }

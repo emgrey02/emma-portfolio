@@ -4,7 +4,7 @@ import { darkerGrotesque } from '../../styles/fonts';
 import Project from '../Project';
 import ProjectsNav from '../ProjectsNav';
 import styles from './Projects.module.scss';
-import ProjectList from '/lib/data.json';
+import ProjectList from '/json/data';
 
 export default function Projects() {
     const [currentPage, setCurrentPage] = useState('websites');
@@ -26,7 +26,7 @@ export default function Projects() {
                 sortedProjects.map((project, index) => {
                     return (
                         <Project
-                            key={index}
+                            key={`${project}${index}`}
                             title={project.title}
                             badges={project.badges}
                             links={project.links}
