@@ -1,28 +1,31 @@
 import Image from 'next/image';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { darkerGrotesque } from '../../styles/fonts';
 import Project from '../Project';
 import ProjectsNav from '../ProjectsNav';
 import styles from './Projects.module.scss';
 import ProjectList from '/json/data';
 
-export default function Projects() {
-    const [currentPage, setCurrentPage] = useState('websites');
+export default function Projects(fallbackVal = 'websites') {
+    const [currentPage, setCurrentPage] = useState(fallbackVal);
 
-    const handleChangePage = (e) => {
-        let page = e.target.innerText;
-        setCurrentPage(page);
-        sortProjects(page);
-    };
+    useEffect(() => {
+        const page = localStorage.getItem('current-page');
+        setCurrentPage(page ? page : fallbackVal);
+    }, [fallbackVal]);
+
+    useEffect(() => {
+        localStorage.setItem('current-page', currentPage);
+    }, [currentPage]);
 
     let sortedProjects;
     let displayedProjects;
 
-    const sortProjects = (pageCat) => {
-        sortedProjects = ProjectList[pageCat];
+    let sortProjects = (page) => {
+        sortedProjects = ProjectList[page];
 
         displayedProjects =
-            sortedProjects.length > 0 ? (
+            sortedProjects?.length > 0 ? (
                 sortedProjects.map((project, index) => {
                     return (
                         <Project
@@ -31,7 +34,7 @@ export default function Projects() {
                             badges={project.badges}
                             links={project.links}
                             image={project.image}
-                            cat={pageCat}
+                            cat={page}
                             audio={project.audio}
                         ></Project>
                     );
@@ -39,6 +42,13 @@ export default function Projects() {
             ) : (
                 <div> No projects to display</div>
             );
+    };
+
+    const handleChangePage = (e) => {
+        console.log('fired');
+        let page = e.target.innerText;
+        setCurrentPage(page);
+        sortProjects(page);
     };
 
     sortProjects(currentPage);
