@@ -59,6 +59,10 @@
   width: min-content;
 }
 
+.nav li a:hover {
+  color: var.$mid-yellow;
+}
+
 .bkgd {
   background-color: inherit;
 }

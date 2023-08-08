@@ -56,7 +56,7 @@ export default function Projects(fallbackVal = 'websites') {
     let categories = ['websites', 'designs', 'art', 'music'];
 
     return (
-        <section>
+        <>
             <div className={styles.header}>
                 <h2 className={darkerGrotesque.className}>portfolio</h2>
                 <Image
@@ -82,7 +82,7 @@ export default function Projects(fallbackVal = 'websites') {
                 ></ProjectsNav>
                 <div className={styles.projCont}>{displayedProjects}</div>
             </div>
-        </section>
+        </>
     );
 }
 

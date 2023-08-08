@@ -28,8 +28,9 @@ export default function Home() {
                         <span>musician</span>
                     </div>
                 </div>
+                <Projects></Projects>
             </Layout>
-            <Projects></Projects>
+
             <Footer></Footer>
         </>
     );

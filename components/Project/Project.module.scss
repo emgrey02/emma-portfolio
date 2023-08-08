@@ -30,17 +30,20 @@
   }
 
   &.design,
-  &.art,
-  &.music {
+  &.art {
     flex-direction: column;
 
     .imgCont {
       position: relative;
+      align-self: center;
       height: auto;
       width: auto;
     }
   }
 
+  &.music {
+    flex-direction: column;
+  }
 }
 
 
@@ -49,7 +52,9 @@
   font-size: clamp(1.5rem, 0.5714rem + 1.9048vw, 2rem);
   font-weight: 500;
   text-align: start;
+  line-height: 0.9;
   margin: 0;
+  padding-block-end: .5em;
 }
 
 .badges {

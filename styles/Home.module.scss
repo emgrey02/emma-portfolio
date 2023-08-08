@@ -35,3 +35,9 @@
     transform: translateX(-100%);
   }
 }
+
+.cont {
+  display: grid;
+  place-items: center;
+  padding-inline: .3em;
+}
