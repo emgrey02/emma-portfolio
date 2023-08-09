@@ -33,7 +33,7 @@ export default function Layout({ children, home }) {
                     <div className={styles.title}>
                         <Image
                             priority
-                            src="/images/small-sun.svg"
+                            src="/images/full-sun-light.svg"
                             className={styles.image}
                             height={700}
                             width={800}
@@ -42,21 +42,9 @@ export default function Layout({ children, home }) {
                         <h1 className={darkerGrotesque.className}>{name}</h1>
                         <style jsx>{`
                             h1 {
-                                position: absolute;
-                                bottom: 3.2rem;
-                                left: 41%;
-                                width: max-content;
+                                margin-block: 0.2em 0.5em;
                                 animation: fade-slide 1s
                                     cubic-bezier(0.25, 0.46, 0.45, 0.94);
-                            }
-
-                            @media (max-width: 1000px) {
-                                h1 {
-                                    font-size: 3rem;
-                                    position: relative;
-                                    left: 50%;
-                                    transform: translate(-50%, 50%);
-                                }
                             }
 
                             @keyframes fade-slide {

@@ -7,7 +7,7 @@ export default function Resume() {
         <Layout>
             <section className={styles.cont}>
                 <h1 className={darkerGrotesque.className}>Resume</h1>
-                <div>
+                <div className={styles.resumeCont}>
                     <div>
                         <p>
                             Completing a degree in Interface Design &
