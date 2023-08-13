@@ -36,6 +36,7 @@ export default function Projects(fallbackVal = 'websites') {
                             image={project.image}
                             cat={page}
                             audio={project.audio}
+                            desc={project.desc}
                         ></Project>
                     );
                 })

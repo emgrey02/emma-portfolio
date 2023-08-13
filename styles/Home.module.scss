@@ -46,6 +46,7 @@
 
 .resumeCont {
   display: grid;
+  max-width: 1200px;
 
   @media (min-width: 800px) {
     grid-template-columns: 1fr .3fr;

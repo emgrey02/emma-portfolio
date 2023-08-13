@@ -42,7 +42,9 @@ export default function Layout({ children, home }) {
                         <h1 className={darkerGrotesque.className}>{name}</h1>
                         <style jsx>{`
                             h1 {
-                                margin-block: 0.2em 0.5em;
+                                letter-spacing: 0.0001em;
+                                height: min-content;
+                                margin-block: 0 0.8em;
                                 animation: fade-slide 1s
                                     cubic-bezier(0.25, 0.46, 0.45, 0.94);
                             }

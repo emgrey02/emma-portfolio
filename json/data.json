@@ -17,7 +17,14 @@
                 "live": "https://jam-house.netlify.app",
                 "code": "https://github.com/emgrey02/idmx-music-app-plus"
             },
-            "image": "/images/jam-house-logo.svg"
+            "image": "/images/jam-house-logo.svg",
+            "desc": [
+                "worked with a team of ui/ux designers/developers",
+                "a school project as part of my Interface Design and Web Development degree",
+                "held the role of team leader - delegated tasks and facilitated the design and development process",
+                "followed the human-centered design process",
+                "utilized kanban for project management"
+            ]
         },
         {
             "title": "diversity community group",
@@ -35,7 +42,16 @@
             "links": {
                 "live": "https://diversitycommunitygroup.com"
             },
-            "image": "/images/sunset-dcg-logo.svg"
+            "image": "/images/sunset-dcg-logo.svg",
+            "desc": [
+                "volunteered for this group to create a website for their 1-year anniversary",
+                "worked with a UX designer and contributed mood boards, wireframes, and ui elements",
+                "continued to volunteer with DCG: redesigned their intake process with airtable & email automations",
+                "regularly updated website with monthly online events using Wix Events",
+                "onboarded new DCG volunteers",
+                "regularly used Google Meet, Zoom, Slack, and Linkedin for communication",
+                "started creating a directory for DEI practitioners with Nextjs and Airtable API to read/write to airtable spreadsheets"
+            ]
         },
         {
             "title": "life nailed",
@@ -48,7 +64,12 @@
             "links": {
                 "live": "https://lifenailed.com"
             },
-            "image": "/images/life-nailed-logo.png"
+            "image": "/images/life-nailed-logo.png",
+            "desc": [
+                "worked with a team of UI/UX designers to create a website for a life coach",
+                "translated high fidelity wireframes to a website on Wix",
+                "created a mobile layout of the website from desktop wireframes"
+            ]
         },
         {
             "title": "digital portfolio",
@@ -67,7 +88,16 @@
                 "live": "https://emmagrey.netlify.app",
                 "code": "https://github.com/emgrey02/emma-portfolio"
             },
-            "image": "/images/eg-logo-light.svg"
+            "image": "/images/eg-logo-light.svg",
+            "desc": [
+                "the website you're looking at right now!",
+                "planned, brainstormed, and wireframed on Figma",
+                "learned and used Nextjs & React",
+                "used scss modules for styling",
+                "used storybook to test components",
+                "the portfolio section reads from a json file and populates each component with the correct data",
+                "utilized the radix-ui library for this accordion"
+            ]
         },
         {
             "title": "drawing board",
@@ -82,7 +112,14 @@
                 "live": "https://stylestage.dev/styles/drawing-board/",
                 "code": "https://github.com/emgrey02/style-stage-emgrey02"
             },
-            "image": "/images/stylestage-logo.png"
+            "image": "/images/stylestage-logo.png",
+            "desc": [
+                "Stephanie Eckles' created this open-source showcase of one webpage with different community-contributed styles",
+                "wrote css for this challenge and called the design Drawing Board",
+                "actually wrote sass that was compiled into css",
+                "the design is fully accessible, taking into account things like user's preference for motion, keyboard usage experience, and eyesight",
+                "used latest css techniques like clamp for responsive font-size, grid layout, and animations"
+            ]
         },
         {
             "title": "digital portfolio [old]",
