@@ -8,7 +8,7 @@ export default function Navigation() {
             <Link className={styles.bkgd} href="/">
                 <Image
                     priority
-                    src="/images/eg-logo-dark.svg"
+                    src="/images/eg-logo-light.svg"
                     className={styles.image}
                     height={100}
                     width={100}
@@ -16,13 +16,13 @@ export default function Navigation() {
                 />
             </Link>
             <ul className={styles.nav}>
-                <li>
+                <li className={styles.aboutItem}>
                     <Link href="/about">about</Link>
                 </li>
-                <li>
+                <li className={styles.contactItem}>
                     <Link href="/contact">contact</Link>
                 </li>
-                <li>
+                <li className={styles.resumeItem}>
                     <Link href="/resume">resume</Link>
                 </li>
             </ul>

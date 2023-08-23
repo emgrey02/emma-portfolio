@@ -7,6 +7,10 @@
   padding: 20px;
   height: auto;
   border: 1px solid var.$grey;
+
+  @media (min-width: 1800px) {
+    align-self: start;
+  }
 }
 
 .textCont {
@@ -31,12 +35,10 @@
   &.design,
   &.art {
     flex-direction: column;
+    align-items: center;
 
     .imgCont {
-      position: relative;
-      align-self: center;
       height: auto;
-      width: auto;
     }
   }
 
@@ -51,6 +53,7 @@
   text-align: start;
   line-height: 0.9;
   margin: 0;
+  padding-block-end: .5em;
   color: var.$black;
   align-self: flex-start;
 }
@@ -97,8 +100,7 @@
 }
 
 .art .image {
-  width: 100%;
-  max-width: 600px;
+  width: 600px;
   height: auto;
 }
 

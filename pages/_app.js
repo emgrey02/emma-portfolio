@@ -3,7 +3,7 @@ import '../styles/global.css';
 
 export default function App({ Component, pageProps }) {
     return (
-        <div className={questrial.className} style={{ overflowX: 'hidden' }}>
+        <div className={questrial.className}>
             <Component {...pageProps} />
         </div>
     );

@@ -1,12 +1,10 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
-import { darkerGrotesque } from '../../styles/fonts';
 import Footer from '../Footer';
 import Navigation from '../MainNav';
 import styles from './Layout.module.scss';
 
-const name = 'emma grey';
 export const siteTitle = `emma grey`;
 
 export default function Layout({ children, home }) {
@@ -27,37 +25,9 @@ export default function Layout({ children, home }) {
                 <meta name="og:title" content={siteTitle} />
                 <meta name="twitter:card" content="summary_large_image" />
             </Head>
-            <Navigation></Navigation>
             <header className={styles.header}>
-                {home ? (
-                    <div className={styles.title}>
-                        <Image
-                            priority
-                            src="/images/full-sun-light.svg"
-                            className={styles.image}
-                            height={700}
-                            width={800}
-                            alt="A sun with three rays coming out of it."
-                        />
-                        <h1 className={darkerGrotesque.className}>{name}</h1>
-                        <style jsx>{`
-                            h1 {
-                                letter-spacing: 0.0001em;
-                                height: min-content;
-                                margin-block: 0 0.8em;
-                                animation: fade-slide 1s
-                                    cubic-bezier(0.25, 0.46, 0.45, 0.94);
-                            }
-
-                            @keyframes fade-slide {
-                                0% {
-                                    opacity: 0;
-                                    transform: translateX(200px);
-                                }
-                            }
-                        `}</style>
-                    </div>
-                ) : (
+                <Navigation></Navigation>
+                {!home && (
                     <div className={styles.smallTitle}>
                         <Link href="/">
                             <Image

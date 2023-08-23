@@ -2,42 +2,44 @@
 
 .container {
   width: 100%;
-  background-color: var.$grey;
+  color: var.$blue;
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: fixed;
-  color: var.$bone;
+  // position: fixed;
   z-index: 5;
+  // background-color: #e4d9c7aa;
 
   @media (min-width: 800px) {
+    background-color: transparent;
     width: 300px;
-    clip-path: circle(17% at 15.5% 18.3%);
-    align-items: flex-start;
+    position: relative;
+    flex-direction: row;
+    height: 250px;
+    margin-block-start: .5em;
+    align-items: center;
+    justify-content: flex-start;
     transition: clip-path 1s;
     cursor: pointer;
-
-    &:hover,
-    &:focus-within {
-      clip-path: circle(70% at 0% 20%);
-    }
+    overflow: hidden;
+    position: absolute;
+    left: 0;
   }
 }
 
 .nav {
   display: flex;
-  justify-content: center;
   padding-block: 0.5em;
+  width: min-content;
   color: inherit;
   transition: color 500ms;
   gap: 2em;
   margin: 0;
+  position: relative;
 
   @media (min-width: 800px) {
-    width: 100%;
     flex-direction: column;
     justify-content: space-around;
-    padding-block-end: 2em;
     gap: 0;
   }
 }
@@ -48,7 +50,7 @@
   padding: 0;
 
   @media (min-width: 800px) {
-    width: 70px;
+    width: 100px;
     height: auto;
     margin-inline-start: 0.5em;
   }
@@ -60,8 +62,33 @@
 }
 
 .nav li a:hover {
-  color: var.$mid-yellow;
+  color: var.$black;
+
+  @media (min-width: 800px) {
+    a {
+      color: var.$orange;
+    }
+  }
 }
+
+@media (min-width: 800px) {
+  .aboutItem {
+    position: relative;
+    transform: translate(-78px, -90px) rotate(180deg);
+    writing-mode: vertical-lr;
+  }
+
+  .contactItem {
+    position: absolute;
+    transform: translate(-44px, -63px) rotate(-45deg);
+  }
+
+  .resumeItem {
+    position: absolute;
+    transform: translate(-5px, -5px);
+  }
+}
+
 
 .bkgd {
   background-color: inherit;

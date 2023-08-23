@@ -1,55 +1,29 @@
 @use '/styles/variables.module.scss' as var;
 
-.marquee {
+.homeHeader {
   display: flex;
-  gap: 5rem;
-  border-top: 2px solid var.$blue;
-  border-bottom: 2px solid var.$blue;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1em;
   width: 100%;
-  margin: 0;
-  padding: .5em;
-  overflow-x: hidden;
-  background-color: var.$grey;
-  color: var.$bone;
-}
-
-.group1,
-.group2 {
-  display: flex;
-  gap: 10rem;
-  padding-left: 100%;
-  animation: move infinite 20s linear;
-
-  span {
-    width: max-content;
-    font-size: 1.5em;
-  }
-
-  @media (prefers-reduced-motion) {
-    animation-iteration-count: 1;
-    animation-duration: 0.01;
-    transform: translateX(-50%);
-  }
-}
-
-@keyframes move {
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
-.cont {
-  display: grid;
-  place-items: center;
-  padding-inline: .5em;
+  height: 100vh;
 }
 
 .resumeCont {
   display: grid;
   max-width: 1200px;
+  gap: 2em;
 
   @media (min-width: 800px) {
     grid-template-columns: 1fr .3fr;
-
+    margin: 1em;
   }
+}
+
+.cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

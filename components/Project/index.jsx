@@ -1,6 +1,5 @@
 import * as Accordion from '@radix-ui/react-accordion';
 import Image from 'next/image';
-import { useState } from 'react';
 import { darkerGrotesque } from '../../styles/fonts';
 import { Badge } from '../Badge';
 import { CodeLink } from '../CodeLink';
@@ -17,8 +16,6 @@ export default function Project({
     audio,
     desc,
 }) {
-    const [openDesc, setOpenDesc] = useState(false);
-
     const badgeGroup = badges.map((badge, index) => {
         return (
             <li key={index}>
@@ -82,10 +79,6 @@ export default function Project({
             />
         );
 
-    const handleClick = () => {
-        setOpenDesc((prev) => !prev);
-    };
-
     return (
         <Accordion.Root
             type="single"
@@ -113,10 +106,7 @@ export default function Project({
             </div>
             {desc && (
                 <Accordion.Item value="view-desc" className={styles.descCont}>
-                    <Accordion.Trigger
-                        className={styles.openBtn}
-                        onClick={handleClick}
-                    >
+                    <Accordion.Trigger className={styles.openBtn}>
                         {/* {openDesc ? <span>close</span> : <span>read more</span>} */}
                         <div className={styles.chevron} aria-hidden>
                             <svg
