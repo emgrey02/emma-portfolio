@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import styles from './Button.module.scss';
 
-export default function Button({ text, link, onClick, size }) {
+export default function Button({ text, link, onClick, size, img, children }) {
     return (
         <div>
             {link ? (
@@ -9,7 +9,7 @@ export default function Button({ text, link, onClick, size }) {
                     className={`${styles.button} ${styles[`${size}`]}`}
                     href={link}
                 >
-                    {text}
+                    {img ? children : text}
                 </a>
             ) : (
                 <button
