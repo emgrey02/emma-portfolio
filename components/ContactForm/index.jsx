@@ -17,7 +17,7 @@ export default function ContactForm() {
                 <input id="name" name="name" type="text" required />
 
                 <label htmlFor="email">email</label>
-                <input id="email" name="email" type="text" required />
+                <input id="email" name="email" type="email" required />
 
                 <label htmlFor="message">message</label>
                 <textarea
@@ -28,14 +28,7 @@ export default function ContactForm() {
                     required
                 ></textarea>
 
-                <Button
-                    className="submit"
-                    onClick={(e) => {
-                        handleSubmit(e);
-                    }}
-                    text="submit"
-                    size="medium"
-                ></Button>
+                <Button className="submit" text="submit" size="medium"></Button>
             </form>
         </div>
     );
