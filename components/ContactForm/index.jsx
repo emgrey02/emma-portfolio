@@ -14,11 +14,12 @@ export default function ContactForm() {
     return (
         <div className={styles.container}>
             <form
+                name="contact form"
                 onSubmit={handleSubmit}
                 className={styles.form}
                 id="send-message"
                 aria-label="Send a message to Emma"
-                netlify
+                data-netlify="true"
             >
                 <label htmlFor="name">name</label>
                 <input id="name" name="name" type="text" required />
