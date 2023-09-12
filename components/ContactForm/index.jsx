@@ -6,8 +6,7 @@ import Button from '../Button';
 export default function ContactForm() {
     const router = useRouter();
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
+    const handleSubmit = () => {
         router.push('/form-thankyou');
     };
 
