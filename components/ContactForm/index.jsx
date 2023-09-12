@@ -1,20 +1,13 @@
-import { useRouter } from 'next/router';
 import styles from './ContactForm.module.scss';
 
 import Button from '../Button';
 
 export default function ContactForm() {
-    const router = useRouter();
-
-    const handleSubmit = () => {
-        router.push('/form-thankyou');
-    };
-
     return (
         <div className={styles.container}>
             <form
                 name="contact form"
-                onSubmit={handleSubmit}
+                method="POST"
                 className={styles.form}
                 id="send-message"
                 aria-label="Send a message to Emma"
