@@ -12,7 +12,9 @@ export default function ContactForm() {
                 id="send-message"
                 aria-label="Send a message to Emma"
                 data-netlify="true"
+                action="/form-thankyou"
             >
+                <input type="hidden" name="contact form" value="contact form" />
                 <label htmlFor="name">name</label>
                 <input id="name" name="name" type="text" required />
 
