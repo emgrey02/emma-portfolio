@@ -1,6 +1,31 @@
 {
     "websites": [
         {
+            "title": "pokedex",
+            "badges": [
+                { "text": "web developer", "theme": "role" },
+                { "text": "ui/ux designer", "theme": "role" },
+                { "text": "nextjs", "theme": "tech" },
+                { "text": "react", "theme": "tech" },
+                { "text": "tailwind", "theme": "tech" },
+                { "text": "free convert api", "theme": "tech" },
+                { "text": "poke api", "theme": "tech" },
+                { "text": "vercel", "theme": "tech" },
+                { "text": "github", "theme": "tech" }
+            ],
+            "links": {
+                "live": "https://ghw-pokedex.vercel.app",
+                "code": "https://github.com/emgrey02/ghw-pokedex"
+            },
+            "image": "/images/pokedex.png",
+            "desc": [
+                "a challenge from MLH's Global Hack Week - API Week",
+                "challenge - use the pokeAPI to make a pokedex",
+                "features pagination, a search function, and an audio component",
+                "fully responsive and accessible"
+            ]
+        },
+        {
             "title": "jam house",
             "badges": [
                 { "text": "web developer", "theme": "role" },
@@ -24,6 +49,32 @@
                 "team leader - delegated tasks and facilitated the design and development process",
                 "followed the human-centered design process",
                 "utilized kanban for project management"
+            ]
+        },
+        {
+            "title": "RVCC M'App",
+            "badges": [
+                { "text": "web developer", "theme": "role" },
+                { "text": "ui/ux designer", "theme": "role" },
+                { "text": "javascript", "theme": "tech" },
+                { "text": "scss", "theme": "tech" },
+                { "text": "json", "theme": "tech" },
+                { "text": "html", "theme": "tech" },
+                { "text": "github", "theme": "tech" },
+                { "text": "netlify", "theme": "tech" },
+                { "text": "figma", "theme": "tech" }
+            ],
+            "links": {
+                "live": "https://rvcc-mapp.netlify.app",
+                "code": "https://github.com/RVCC-IDMX/campus-maps"
+            },
+            "image": "/images/rvcc-mapp-icon.svg",
+            "desc": [
+                "school capstone project",
+                "created brand new maps for Raritan Valley Community College - indoor & outdoor",
+                "pure css, html, javscript - no framework",
+                "designed all maps in figma",
+                "includes navigation from classroom to classroom using a search feature"
             ]
         },
         {
@@ -144,32 +195,6 @@
                 "pure css, html, javascript - no framework",
                 "scroll animations",
                 "single page site"
-            ]
-        },
-        {
-            "title": "RVCC M'App",
-            "badges": [
-                { "text": "web developer", "theme": "role" },
-                { "text": "ui/ux designer", "theme": "role" },
-                { "text": "javascript", "theme": "tech" },
-                { "text": "scss", "theme": "tech" },
-                { "text": "json", "theme": "tech" },
-                { "text": "html", "theme": "tech" },
-                { "text": "github", "theme": "tech" },
-                { "text": "netlify", "theme": "tech" },
-                { "text": "figma", "theme": "tech" }
-            ],
-            "links": {
-                "live": "https://rvcc-mapp.netlify.app",
-                "code": "https://github.com/RVCC-IDMX/campus-maps"
-            },
-            "image": "/images/rvcc-mapp-icon.svg",
-            "desc": [
-                "school capstone project",
-                "created brand new maps for Raritan Valley Community College - indoor & outdoor",
-                "pure css, html, javscript - no framework",
-                "designed all maps in figma",
-                "includes navigation from classroom to classroom using a search feature"
             ]
         }
     ],
