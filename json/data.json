@@ -1,6 +1,30 @@
 {
     "websites": [
         {
+            "title": "streamd",
+            "badges": [
+                { "text": "web developer", "theme": "role" },
+                { "text": "ui/ux designer", "theme": "role" },
+                { "text": "nextjs", "theme": "tech" },
+                { "text": "react", "theme": "tech" },
+                { "text": "tailwind", "theme": "tech" },
+                { "text": "TMDB api", "theme": "tech" },
+                { "text": "vercel", "theme": "tech" },
+                { "text": "github", "theme": "tech" }
+            ],
+            "links": {
+                "live": "https://streamd.vercel.app",
+                "code": "https://github.com/emgrey02/streamd"
+            },
+            "image": "/images/streamd.svg",
+            "desc": [
+                "a personal project to learn more nextjs",
+                "uses the TMDB api to display movie and tv show info",
+                "allows user to sign in and save movies & tv shows",
+                "users have favorites, a watchlist, and ability to create custom lists"
+            ]
+        },
+        {
             "title": "pokedex",
             "badges": [
                 { "text": "web developer", "theme": "role" },
