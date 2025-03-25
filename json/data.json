@@ -25,6 +25,32 @@
             ]
         },
         {
+            "title": "all the countries",
+            "badges": [
+                { "text": "web developer", "theme": "role" },
+                { "text": "ui/ux designer", "theme": "role" },
+                { "text": "nextjs", "theme": "tech" },
+                { "text": "react", "theme": "tech" },
+                { "text": "tailwind", "theme": "tech" },
+                { "text": "REST Countries API", "theme": "tech" },
+                { "text": "vercel", "theme": "tech" },
+                { "text": "github", "theme": "tech" },
+                { "text": "copilot", "theme": "tech" }
+            ],
+            "links": {
+                "live": "https://allthecountries.vercel.app",
+                "code": "https://github.com/emgrey02/countries-app"
+            },
+            "image": "/images/small-sun.svg",
+            "desc": [
+                "a personal project to learn more nextjs",
+                "uses the REST Countries api to display country info",
+                "worked on page transitions and animations",
+                "users can search for countries and filter by region"
+                
+            ]
+        },
+        {
             "title": "pokedex",
             "badges": [
                 { "text": "web developer", "theme": "role" },
