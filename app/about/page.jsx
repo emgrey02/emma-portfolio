@@ -1,3 +1,4 @@
+import Button from '../components/Button';
 import { darkerGrotesque } from '../styles/fonts';
 import styles from '../styles/Home.module.scss';
 
@@ -8,6 +9,7 @@ export const metadata = {
 export default function About() {
     return (
             <section className={styles.cont}>
+                <Button text="Go Back" link="/" />
                 <h1 className={darkerGrotesque.className}>About</h1>
                 <p>
                     Hi! After I completed a bachelor&apos;s degree in Clarinet

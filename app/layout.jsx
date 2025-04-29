@@ -1,4 +1,6 @@
+import Navigation from './components/MainNav';
 import './global.css';
+import styles from './layout.module.scss';
 import { questrial } from './styles/fonts';
 
 export const metadata = {
@@ -6,10 +8,13 @@ export const metadata = {
     description: 'Welcome to Emma\'s portfolio',
 }
 
-export default function AppLayout({ children }) {
+export default function Layout({ children}) {
     return (
         <html lang='en'>
             <body className={questrial.className}>
+                <header className={styles.header}>
+                    <Navigation></Navigation>
+            </header>
                 <main>{children}</main>
             </body>
         </html>

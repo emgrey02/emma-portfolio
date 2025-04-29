@@ -1,4 +1,4 @@
-
+import Button from '../components/Button';
 import { darkerGrotesque } from '../styles/fonts';
 import styles from '../styles/Home.module.scss';
 
@@ -10,6 +10,7 @@ export default function Resume() {
     return (
         
             <section className={styles.cont}>
+                <Button text="Go Back" link="/" />
                 <h1 className={darkerGrotesque.className}>Resume</h1>
                 <div className={styles.resumeCont}>
                     <div>

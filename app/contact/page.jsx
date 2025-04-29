@@ -1,4 +1,4 @@
-
+import Button from '../components/Button';
 import ContactForm from '../components/ContactForm';
 import styles from '../styles/Home.module.scss';
 import { darkerGrotesque } from '../styles/fonts';
@@ -12,6 +12,7 @@ export default function Contact() {
     return (
         
         <section className={styles.cont}>
+            <Button text="Go Back" link="/" />
             <h1 className={darkerGrotesque.className}>Contact Emma</h1>
             <div>
                 <ul className={utilStyles.list}>
