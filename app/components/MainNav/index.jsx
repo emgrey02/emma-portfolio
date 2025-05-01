@@ -16,8 +16,8 @@ export default function Navigation() {
                 />
             </Link>
             <ul className={styles.nav}>
-                <li className={styles.aboutItem}>
-                    <Link href="/about">about</Link>
+                <li className={styles.blogItem}>
+                    <Link href="/blog">blog</Link>
                 </li>
                 <li className={styles.contactItem}>
                     <Link href="/contact">contact</Link>
