@@ -3,17 +3,14 @@
 .article {
     display: grid;
     place-items: center;
-    padding: 2em;
-    margin-block: 3em;
+    padding: 1em;
+    margin-block: 1em;
     z-index: 1;
 
     pre code {
         display: block;
         background: var.$mid-yellow;
-        white-space: pre;
-        max-width: 100%;
-        min-width: 100px;
-        padding: 1em;
+
         overflow-x: scroll;
     }
 
@@ -41,7 +38,6 @@
 
     li {
         list-style: circle;
-        margin-left: 2em;
     }
 
     a {
@@ -54,4 +50,18 @@
             text-decoration: underline;
         }
     }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        margin: 1em 0;
+    }
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
 }

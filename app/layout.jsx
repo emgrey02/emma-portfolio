@@ -4,8 +4,21 @@ import styles from './Layout.module.scss';
 import { questrial } from './styles/fonts';
 
 export const metadata = {
-    title: 'Home',
-    description: "Welcome to Emma's portfolio",
+    metadataBase: new URL('https://emmagrey.vercel.app'),
+    alternates: {
+        canonical: '/',
+        languages: {
+            en: '/en',
+        },
+    },
+    title: {
+        template: "%s | emma grey's portfolio website",
+        default: "emma grey's portfolio website",
+    },
+    description:
+        'emma is a front-end web developer and designer specializing in responsive websites and modern frameworks like Next.js and Tailwind CSS.',
+    keywords:
+        'emma, portfolio, web developer, designer, front-end, responsive websites, Next.js, Tailwind CSS',
 };
 
 export default function Layout({ children }) {

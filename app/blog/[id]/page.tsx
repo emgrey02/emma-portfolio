@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { remark } from 'remark';
 import remarkHtml from 'remark-html';
+import Button from '../../components/Button';
 import {
     getBlogPostById,
     parseFileId,
@@ -52,16 +53,20 @@ export default async function BlogPostPage({
     ).toString();
 
     return (
-        <article className={styles.article}>
-            <h1>{blogPost.title}</h1>
-            <p>{blogPost.date?.toDateString()}</p>
-            <Image
-                src={blogPost.featuredImage}
-                alt={blogPost.title}
-                width={600}
-                height={600}
-            />
-            <p dangerouslySetInnerHTML={{ __html: htmlContent }} />
-        </article>
+        <section className={styles.post}>
+            <Button text="Go Back" link="/blog" />
+
+            <article className={styles.article}>
+                <h1>{blogPost.title}</h1>
+                <p>{blogPost.date?.toDateString()}</p>
+                <Image
+                    src={blogPost.featuredImage}
+                    alt={blogPost.title}
+                    width={200}
+                    height={600}
+                />
+                <p dangerouslySetInnerHTML={{ __html: htmlContent }} />
+            </article>
+        </section>
     );
 }

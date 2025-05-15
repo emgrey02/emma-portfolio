@@ -22,6 +22,14 @@
     }
 }
 
+.heroCont {
+    display: flex;
+    flex-direction: column;
+    padding-inline: 1em;
+    max-width: 70ch;
+    gap: 1em;
+}
+
 .cont {
     display: flex;
     flex-direction: column;
@@ -50,17 +58,28 @@
 
         li {
             border: 1px solid black;
-            width: 250px;
-            display: flex;
+            width: 300px;
             justify-content: center;
             padding: 0.5em;
-
-            a {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                gap: 0.5em;
-            }
         }
+    }
+}
+
+.textCont {
+    display: grid;
+    grid-template-rows: 50px auto auto;
+    flex-direction: column;
+    gap: 0.7em;
+
+    h2 {
+        font-size: 1.2rem;
+        line-height: 1.2em;
+        margin: 0;
+    }
+
+    p {
+        font-size: 0.9rem;
+        margin: 0;
+        text-align: end;
     }
 }

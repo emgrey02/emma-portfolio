@@ -1,6 +1,6 @@
 ---
 title: 'Creating Accessible Buttons'
-description: 'Learn how to create accessible buttons with html and css'
+description: 'Learn how to create accessible buttons with semantic html and simple css.'
 featuredImage: '/images/featured/katya-austin-i4ysi1zwq_w-unsplash.jpg'
 date: 2022-04-10
 ---
