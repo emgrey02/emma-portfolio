@@ -4,7 +4,7 @@ import styles from './Layout.module.scss';
 import { questrial } from './styles/fonts';
 
 export const metadata = {
-    metadataBase: new URL('https://emmagrey.vercel.app'),
+    metadataBase: new URL('https://www.emmagrey.dev'),
     alternates: {
         canonical: '/',
         languages: {
@@ -24,6 +24,13 @@ export const metadata = {
 export default function Layout({ children }) {
     return (
         <html lang="en">
+            <head>
+                <meta name="apple-mobile-web-app-title" content="emma grey" />
+                <meta
+                    name="viewport"
+                    content="width=device-width, initial-scale=1"
+                />
+            </head>
             <body className={questrial.className}>
                 <header className={styles.header}>
                     <Navigation></Navigation>
