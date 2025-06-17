@@ -1,6 +1,13 @@
 import styles from './Button.module.scss';
 
-export default function Button({ text, link, onClick, size, img, children }) {
+export default function Button({
+    text,
+    link = '',
+    onClick = '',
+    size = '',
+    img = '',
+    children = '',
+}) {
     return (
         <div>
             {link ? (
