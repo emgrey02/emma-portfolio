@@ -41,8 +41,8 @@ export default function Home() {
                     </svg>
                 </Button>
             </section>
-            <Projects></Projects>
-            <Footer></Footer>
+            <Projects />
+            <Footer />
         </>
     );
 }
