@@ -5,7 +5,7 @@ export const CodeLink = ({ url }) => {
     return (
         <div className={styles.container}>
             <Image
-                src="/images/code.svg"
+                src="/images/icons/code.svg"
                 alt="brackets representing code"
                 height={24}
                 width={24}

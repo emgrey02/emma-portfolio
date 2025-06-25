@@ -4,16 +4,14 @@ import { darkerGrotesque } from '../../styles/fonts';
 import { Badge } from '../Badge';
 import { CodeLink } from '../CodeLink';
 import { LiveLink } from '../LiveLink';
-import { WaveSurferPlayer } from '../WaveSurferPlayer';
 import styles from './Project.module.scss';
 
 export default function Project({
     title,
     image,
+    coverImage,
     badges,
     links,
-    cat,
-    audio,
     desc,
 }) {
     const badgeGroup = badges.map((badge, index) => {
@@ -24,60 +22,11 @@ export default function Project({
         );
     });
 
-    switch (cat) {
-        case 'websites':
-            cat = 'web';
-            break;
-        case 'art':
-            cat = 'art';
-            break;
-        case 'music':
-            cat = 'music';
-            break;
-        default:
-            cat = 'design';
-            break;
-    }
-
-    let dimh;
-    let dimw;
-    let altT;
-
-    if (cat === 'web') {
-        dimh = dimw = 80;
-        altT = `${title} logo`;
-    } else {
-        dimw = 1500;
-        dimh = 900;
-        altT = `${title}`;
-    }
-
     let description =
         desc &&
         desc.map((bullet, index) => {
             return <li key={index}>{bullet}</li>;
         });
-
-    let display =
-        cat !== 'music' ? (
-            <Image
-                key={title}
-                className={styles.image}
-                src={image}
-                alt={altT}
-                width={dimw}
-                height={dimh}
-            />
-        ) : (
-            <WaveSurferPlayer
-                key={title}
-                height={100}
-                waveColor="#cc6633"
-                progressColor="#2b3347"
-                url={audio}
-                className={styles.audio}
-            />
-        );
 
     return (
         <Accordion.Root
@@ -87,14 +36,35 @@ export default function Project({
             collapsible
         >
             <div className={styles.textCont}>
-                <div className={`${styles.titleCont} ${styles[`${cat}`]}`}>
+                <div className={`${styles.titleCont}`}>
                     <h3
                         className={`${styles.title} ${darkerGrotesque.className}`}
                     >
                         {title}
                     </h3>
-                    <div className={styles.imgCont}>{display}</div>
+                    <div className={styles.imgCont}>
+                        <Image
+                            key={title}
+                            className={styles.image}
+                            src={image}
+                            alt={`${title} logo`}
+                            width="60"
+                            height="60"
+                        />
+                    </div>
                 </div>
+                {coverImage && (
+                    <div className={styles.coverImageCont}>
+                        <Image
+                            key={title}
+                            className={styles.coverImage}
+                            src={coverImage}
+                            alt={`${title} cover image`}
+                            width="600"
+                            height="400"
+                        />
+                    </div>
+                )}
 
                 <ul className={styles.badges}>{badgeGroup}</ul>
                 {links && (
@@ -107,7 +77,6 @@ export default function Project({
             {desc && (
                 <Accordion.Item value="view-desc" className={styles.descCont}>
                     <Accordion.Trigger className={styles.openBtn}>
-                        {/* {openDesc ? <span>close</span> : <span>read more</span>} */}
                         <div className={styles.chevron} aria-hidden>
                             <svg
                                 width="40"

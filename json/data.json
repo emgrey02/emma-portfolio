@@ -16,12 +16,37 @@
                 "live": "https://streamd.vercel.app",
                 "code": "https://github.com/emgrey02/streamd"
             },
-            "image": "/images/streamd.svg",
+            "image": "/images/logos/streamd.svg",
+            "coverImage": "/images/cover-images/streamd.png",
             "desc": [
                 "a personal project to learn more nextjs",
                 "uses the TMDB api to display movie and tv show info",
                 "allows user to sign in and save movies & tv shows",
                 "users have favorites, a watchlist, and ability to create custom lists"
+            ]
+        },
+        {
+            "title": "valerie nuzzolo's portfolio website",
+            "badges": [
+                { "text": "web developer", "theme": "role" },
+                { "text": "ui/ux designer", "theme": "role" },
+                { "text": "astrojs", "theme": "tech" },
+                { "text": "tailwind", "theme": "tech" },
+                { "text": "vercel", "theme": "tech" },
+                { "text": "figma", "theme": "tech" },
+                { "text": "typescript", "theme": "tech" },
+                { "text": "github", "theme": "tech" }
+            ],
+            "links": {
+                "live": "https://valerienuzzolo.com",
+                "code": "https://github.com/emgrey02/valweb"
+            },
+            "image": "/images/logos/val-icon.svg",
+            "coverImage": "/images/cover-images/val.jpg",
+            "desc": [
+                "a portfolio website for a musician and educator",
+                "includes a contact form that sends an email to Valerie",
+                "worked with Valerie to create a design that fits her style and needs"
             ]
         },
         {
@@ -41,13 +66,12 @@
                 "live": "https://allthecountries.vercel.app",
                 "code": "https://github.com/emgrey02/countries-app"
             },
-            "image": "/images/small-sun.svg",
+            "image": "/images/logos/small-sun.svg",
             "desc": [
                 "a personal project to learn more nextjs",
                 "uses the REST Countries api to display country info",
                 "worked on page transitions and animations",
                 "users can search for countries and filter by region"
-                
             ]
         },
         {
@@ -58,7 +82,6 @@
                 { "text": "nextjs", "theme": "tech" },
                 { "text": "react", "theme": "tech" },
                 { "text": "tailwind", "theme": "tech" },
-                { "text": "free convert api", "theme": "tech" },
                 { "text": "poke api", "theme": "tech" },
                 { "text": "vercel", "theme": "tech" },
                 { "text": "github", "theme": "tech" }
@@ -67,7 +90,7 @@
                 "live": "https://ghw-pokedex.vercel.app",
                 "code": "https://github.com/emgrey02/ghw-pokedex"
             },
-            "image": "/images/pokedex.png",
+            "image": "/images/logos/pokedex.png",
             "desc": [
                 "a challenge from MLH's Global Hack Week - API Week",
                 "challenge - use the pokeAPI to make a pokedex",
@@ -92,7 +115,7 @@
                 "live": "https://jam-house.netlify.app",
                 "code": "https://github.com/emgrey02/idmx-music-app-plus"
             },
-            "image": "/images/jam-house-logo.svg",
+            "image": "/images/logos/jam-house-logo.svg",
             "desc": [
                 "worked with a team of ui/ux designers/developers",
                 "a school project as part of my Interface Design and Web Development degree",
@@ -118,59 +141,13 @@
                 "live": "https://rvcc-mapp.netlify.app",
                 "code": "https://github.com/RVCC-IDMX/campus-maps"
             },
-            "image": "/images/rvcc-mapp-icon.svg",
+            "image": "/images/logos/rvcc-mapp-icon.svg",
             "desc": [
                 "school capstone project",
                 "created brand new maps for Raritan Valley Community College - indoor & outdoor",
                 "pure css, html, javscript - no framework",
                 "designed all maps in figma",
                 "includes navigation from classroom to classroom using a search feature"
-            ]
-        },
-        {
-            "title": "diversity community group",
-            "badges": [
-                { "text": "web developer", "theme": "role" },
-                { "text": "ui designer", "theme": "role" },
-                { "text": "project manager", "theme": "role" },
-                { "text": "wix", "theme": "tech" },
-                { "text": "wix events", "theme": "tech" },
-                { "text": "wix email marketing", "theme": "tech" },
-                { "text": "seo", "theme": "tech" },
-                { "text": "figma", "theme": "tech" },
-                { "text": "airtable", "theme": "tech" }
-            ],
-            "links": {
-                "live": "https://diversitycommunitygroup.com"
-            },
-            "image": "/images/sunset-dcg-logo.svg",
-            "desc": [
-                "volunteered for DCG to create a website for their 1-year anniversary",
-                "worked with a UX designer and contributed mood boards, wireframes, and ui elements",
-                "contributed to DCG in addition to developing their website",
-                "redesigned their intake process with airtable & email automations",
-                "regularly updated website with monthly online events using Wix Events",
-                "onboarded new DCG volunteers",
-                "regularly used Google Meet, Zoom, Slack, and Linkedin for communication",
-                "began creating a directory for DEI practitioners with Nextjs and Airtable API to read/write to airtable spreadsheets"
-            ]
-        },
-        {
-            "title": "life nailed",
-            "badges": [
-                { "text": "web developer", "theme": "role" },
-                { "text": "wix", "theme": "tech" },
-                { "text": "figma", "theme": "tech" },
-                { "text": "seo", "theme": "tech" }
-            ],
-            "links": {
-                "live": "https://lifenailed.com"
-            },
-            "image": "/images/life-nailed-logo.png",
-            "desc": [
-                "worked with a team of UI/UX designers to create a website for a life coach",
-                "translated high fidelity wireframes to a website on Wix",
-                "created a mobile layout of the website from desktop wireframes"
             ]
         },
         {
@@ -190,7 +167,7 @@
                 "live": "https://emmagrey.netlify.app",
                 "code": "https://github.com/emgrey02/emma-portfolio"
             },
-            "image": "/images/eg-logo-light.svg",
+            "image": "/images/logos/eg-logo-light.svg",
             "desc": [
                 "the website you're looking at right now!",
                 "planned, brainstormed, and wireframed with Figma",
@@ -214,7 +191,7 @@
                 "live": "https://stylestage.dev/styles/drawing-board/",
                 "code": "https://github.com/emgrey02/style-stage-emgrey02"
             },
-            "image": "/images/stylestage-logo.png",
+            "image": "/images/logos/stylestage-logo.png",
             "desc": [
                 "Stephanie Eckles created this open-source showcase of one webpage with different community-contributed styles",
                 "wrote css for this challenge and called the design Drawing Board",
@@ -239,209 +216,13 @@
                 "live": "https://emgrey02.github.io",
                 "code": "https://github.com/emgrey02/emgrey02.github.io"
             },
-            "image": "/images/iconsquid.svg",
+            "image": "/images/logos/iconsquid.svg",
             "desc": [
                 "my portfolio website before this one",
                 "pure css, html, javascript - no framework",
                 "scroll animations",
                 "single page site"
             ]
-        }
-    ],
-    "designs": [
-        {
-            "title": "contemporary postmodernism poster",
-            "badges": [
-                { "text": "visual designer", "theme": "role" },
-                { "text": "adobe inDesign", "theme": "tech" },
-                { "text": "adobe photoshop", "theme": "tech" },
-                { "text": "adobe illustrator", "theme": "tech" }
-            ],
-            "image": "/images/designs/cont-postmod-poster.png"
-        },
-        {
-            "title": "web accessibility poster",
-            "badges": [
-                { "text": "visual designer", "theme": "role" },
-                { "text": "adobe inDesign", "theme": "tech" },
-                { "text": "adobe illustrator", "theme": "tech" }
-            ],
-            "image": "/images/designs/web-acc-poster.png"
-        },
-        {
-            "title": "magazine cover",
-            "badges": [
-                { "text": "visual designer", "theme": "role" },
-                { "text": "adobe inDesign", "theme": "tech" },
-                { "text": "adobe photoshop", "theme": "tech" }
-            ],
-            "image": "/images/designs/mag.jpg"
-        },
-        {
-            "title": "visual identity system",
-            "badges": [
-                { "text": "visual designer", "theme": "role" },
-                { "text": "adobe photoshop", "theme": "tech" },
-                { "text": "adobe illustrator", "theme": "tech" }
-            ],
-            "image": "/images/designs/visual-identity.png"
-        }
-    ],
-    "art": [
-        {
-            "title": "pattern repeat - booklet cover",
-            "badges": [
-                { "text": "2-d designer", "theme": "role" },
-                { "text": "adobe photoshop", "theme": "tech" }
-            ],
-            "image": "/images/art/pattern-repeat-eg.jpg"
-        },
-        {
-            "title": "booklet - scleroderma skin",
-            "badges": [
-                { "text": "2-d designer", "theme": "role" },
-                { "text": "acrylic", "theme": "tech" },
-                { "text": "pencil", "theme": "tech" },
-                { "text": "charcoal", "theme": "tech" },
-                { "text": "tape", "theme": "tech" }
-            ],
-            "image": "/images/art/booklet.jpg"
-        },
-        {
-            "title": "stencil work",
-            "badges": [
-                { "text": "2-d designer", "theme": "role" },
-                { "text": "acrylic", "theme": "tech" },
-                { "text": "stencils", "theme": "tech" }
-            ],
-            "image": "/images/art/stencils.jpg"
-        },
-        {
-            "title": "shapes",
-            "badges": [
-                { "text": "2-d designer", "theme": "role" },
-                { "text": "acrylic", "theme": "tech" },
-                { "text": "glue", "theme": "tech" }
-            ],
-            "image": "/images/art/final-shapes-eg.jpg"
-        },
-        {
-            "title": "texture greyscale",
-            "badges": [
-                { "text": "2-d designer", "theme": "role" },
-                { "text": "pencil", "theme": "role" },
-                { "text": "charcoal", "theme": "tech" }
-            ],
-            "image": "/images/art/actual-texture-greyscale.jpg"
-        },
-        {
-            "title": "graphic gradations",
-            "badges": [
-                { "text": "2-d designer", "theme": "role" },
-                { "text": "acrylic", "theme": "tech" },
-                { "text": "pencil", "theme": "tech" },
-                { "text": "charcoal", "theme": "tech" },
-                { "text": "sharpie", "theme": "tech" }
-            ],
-            "image": "/images/art/graphic-gradations-eg.jpg"
-        },
-        {
-            "title": "digital greyscale",
-            "badges": [
-                { "text": "2-d designer", "theme": "role" },
-                { "text": "adobe photoshop", "theme": "tech" }
-            ],
-            "image": "/images/art/digital-greyscale-eg.jpg"
-        },
-        {
-            "title": "line drawing",
-            "badges": [
-                { "text": "2-d designer", "theme": "role" },
-                { "text": "pencil", "theme": "tech" }
-            ],
-            "image": "/images/art/line-drawing.jpg"
-        }
-    ],
-    "music": [
-        {
-            "title": "01",
-            "badges": [
-                { "text": "music production", "theme": "role" },
-                { "text": "ableton", "theme": "tech" }
-            ],
-            "audio": "/music/athing.mp3"
-        },
-        {
-            "title": "02",
-            "badges": [
-                { "text": "music production", "theme": "role" },
-                { "text": "ableton", "theme": "tech" }
-            ],
-            "audio": "/music/dawelakfjd.mp3"
-        },
-        {
-            "title": "03",
-            "badges": [
-                { "text": "music production", "theme": "role" },
-                { "text": "ableton", "theme": "tech" }
-            ],
-            "audio": "/music/dillabeat.mp3"
-        },
-        {
-            "title": "04",
-            "badges": [
-                { "text": "music production", "theme": "role" },
-                { "text": "ableton", "theme": "tech" }
-            ],
-            "audio": "/music/firstone.mp3"
-        },
-        {
-            "title": "05",
-            "badges": [
-                { "text": "music production", "theme": "role" },
-                { "text": "ableton", "theme": "tech" }
-            ],
-            "audio": "/music/holiday_boop.wav"
-        },
-        {
-            "title": "06",
-            "badges": [
-                { "text": "music production", "theme": "role" },
-                { "text": "ableton", "theme": "tech" }
-            ],
-            "audio": "/music/jcole.mp3"
-        },
-        {
-            "title": "07",
-            "badges": [
-                { "text": "music production", "theme": "role" },
-                { "text": "ableton", "theme": "tech" }
-            ],
-            "audio": "/music/nylonbeat.mp3"
-        },
-        {
-            "title": "08",
-            "badges": [
-                { "text": "music production", "theme": "role" },
-                { "text": "ableton", "theme": "tech" }
-            ],
-            "audio": "/music/secondgifsong.mp3"
-        },
-        {
-            "title": "09",
-            "badges": [
-                { "text": "music production", "theme": "role" },
-                { "text": "ableton", "theme": "tech" }
-            ],
-            "audio": "/music/something.mp3"
-        },
-        {
-            "title": "11",
-            "badges": [
-                { "text": "music production", "theme": "role" },
-                { "text": "ableton", "theme": "tech" }
-            ],
-            "audio": "/music/creepysong.mp3"
         }
     ]
 }

@@ -22,7 +22,7 @@ export default function Home() {
                         in responsive websites and modern frameworks like
                         Next.js and Tailwind CSS.
                     </div>
-                    <div>check out my portfolio of projects down below!</div>
+                    <div>check out my portfolio down below!</div>
                 </div>
                 <Button size="small" link="#portfolio" img>
                     <svg

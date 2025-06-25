@@ -6,7 +6,7 @@ export const LiveLink = ({ url }) => {
         <div className={styles.container}>
             <Image
                 alt="Link"
-                src="/images/link.svg"
+                src="/images/icons/link.svg"
                 height={24}
                 width={24}
             ></Image>

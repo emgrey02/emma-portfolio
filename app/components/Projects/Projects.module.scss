@@ -10,6 +10,8 @@
 .container {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin-inline: clamp(0.2em, 0.5em + 1vw, 2em);
     margin-block-end: 5rem;
 
@@ -21,10 +23,11 @@
 .projCont {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    max-width: 1000px;
     width: 100%;
     gap: 1em;
     margin-block-start: clamp(0.2em, 0.5em + 1vw, 2em);
-    overflow-x: scroll;
 
     @media (min-width: 800px) {
         padding-inline-start: clamp(0.2em, 0.5em + 1vw, 2em);

@@ -1,63 +1,26 @@
-'use client'
+'use client';
 
 import Image from 'next/image';
-import { useEffect, useState } from 'react';
 import { darkerGrotesque } from '../../styles/fonts';
 import Project from '../Project';
-import ProjectsNav from '../ProjectsNav';
 import styles from './Projects.module.scss';
 import ProjectList from '/json/data';
 
 export default function Projects() {
-    const [currentPage, setCurrentPage] = useState('websites');
-
-	useEffect(() => {
-		localStorage.setItem('current-page', currentPage);
-	}, [currentPage]);
-	
-    useEffect(() => {
-        let page = localStorage.getItem('current-page');
-		setCurrentPage(page);
-    }, [setCurrentPage]);
-
-
-    let sortedProjects;
-    let displayedProjects;
-
-    let sortProjects = (page) => {
-        sortedProjects = ProjectList[page];
-
-        displayedProjects =
-            sortedProjects?.length > 0 ? (
-                sortedProjects.map((project, index) => {
-                    return (
-                        <Project
-                            key={`${project}${index}`}
-                            title={project.title}
-                            badges={project.badges}
-                            links={project.links}
-                            image={project.image}
-                            cat={page}
-                            audio={project.audio}
-                            desc={project.desc}
-                        ></Project>
-                    );
-                })
-            ) : (
-                <div> No projects to display</div>
-            );
-    };
-
-    const handleChangePage = (e) => {
-        console.log('fired');
-        let page = e.target.innerText;
-        setCurrentPage(page);
-        sortProjects(page);
-    };
-
-    sortProjects(currentPage);
-
-    let categories = ['websites', 'designs', 'art', 'music'];
+    const projects = ProjectList.websites.map((project, index) => {
+        return (
+            <Project
+                key={`${project}${index}`}
+                title={project.title}
+                badges={project.badges}
+                links={project.links}
+                image={project.image}
+                coverImage={project.coverImage}
+                audio={project.audio}
+                desc={project.desc}
+            ></Project>
+        );
+    });
 
     return (
         <div id="portfolio" className={styles.projectsCont}>
@@ -79,12 +42,7 @@ export default function Projects() {
                 `}</style>
             </div>
             <div className={styles.container}>
-                <ProjectsNav
-                    page={currentPage}
-                    onClick={handleChangePage}
-                    categories={categories}
-                ></ProjectsNav>
-                <div className={styles.projCont}>{displayedProjects}</div>
+                <div className={styles.projCont}>{projects}</div>
             </div>
         </div>
     );
