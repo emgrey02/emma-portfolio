@@ -18,15 +18,14 @@ export default function Resume() {
             <div className={styles.resumeCont}>
                 <div>
                     <p>
-                        Completing a degree in Interface Design & Development
-                        interested in holding a role that includes both aspects
-                        of website creation. Highly skilled in wireframing and
-                        prototyping in Figma, human-centered design, and
-                        front-end development. Focused on accessibility because
-                        it benefits everyone. Recognized through awards for
-                        artistic and coding accomplishments. Hardworking,
-                        passionate, detail-oriented, organized, creative, and
-                        motivated to learn.
+                        Creative and detail-oriented Front-End Web Developer
+                        with hands-on experience maintaining and enhancing
+                        WordPress websites. Currently serving as Office &
+                        Marketing Manager at GreenRose Design, combining
+                        technical web skills with diverse marketing and
+                        administrative responsibilities. Skilled in creating
+                        responsive, accessible web content with a keen eye for
+                        design and usability.
                     </p>
 
                     <h3>Education</h3>
@@ -54,10 +53,28 @@ export default function Resume() {
 
                     <div>
                         <h4>
+                            Office & Marketing Manager for GreenRose
+                            Design-Build
+                        </h4>
+                        <p>March 2023 - NOW</p>
+                        <p>Independent Contractor</p>
+                        <p>
+                            Maintains and updates GreenRose Design’s WordPress
+                            website, ensuring responsive, accessible layouts and
+                            strong SEO. Creates and schedules social media
+                            assets and printed advertisements to align with
+                            brand strategy. Manages financial records and
+                            reporting using QuickBooks. Organizes digital file
+                            systems, scans and uploads documentation for
+                            internal records.
+                        </p>
+                    </div>
+                    <div>
+                        <h4>
                             Web Designer/Developer with Diversity Community
                             Group (DCG)
                         </h4>
-                        <p>January 2023 - NOW</p>
+                        <p>January 2023 - August 2023</p>
                         <p>Volunteer</p>
                         <p>
                             Helped design a website for the group’s first year
@@ -66,7 +83,7 @@ export default function Resume() {
                             Translated wireframes into a website built with Wix.
                             Continue working with DCG to redesign their intake
                             process with Airtable, update website with upcoming
-                            events, and eventually build a directory of DEI
+                            events, and help begin to build a directory of DEI
                             practitioners.
                         </p>
                     </div>
@@ -75,28 +92,12 @@ export default function Resume() {
                             Web Designer/Developer with Diverse Design
                             Collective (DDC)
                         </h4>
-                        <p>May 2022 - NOW</p>
+                        <p>May 2022 - September 2022</p>
                         <p>Volunteer</p>
                         <p>
                             Collaborated with a team on the design and
                             development of a life coach’s website. Translated
                             wireframes into a website built with Wix.{' '}
-                        </p>
-                    </div>
-                    <div>
-                        <h4>
-                            Graphic Designer/Office Manager with GreenRose
-                            Enterprises
-                        </h4>
-                        <p>March 2023 - NOW</p>
-                        <p>Independent Contractor</p>
-                        <p>
-                            Design brochures, postcards, blog posts,
-                            newsletters, and other marketing materials for a
-                            fine homes design firm that aids in designing,
-                            remodeling, building, and selling homes. Organize,
-                            scan, and upload large amounts of files to google
-                            drive.
                         </p>
                     </div>
 
@@ -118,21 +119,31 @@ export default function Resume() {
                         <p>May 2021</p>
                         <p>Represents 300 hours of coursework</p>
                     </div>
-                    <div>
-                        <h4>Concerto Competition Finalist</h4>
-                        <p>Ithaca College School of Music</p>
-                        <p>March 2018</p>
-                        <p>
-                            Made it to the finals of Ithaca College’s Concerto
-                            Competition, playing Ondrej Kukal’s Clarinettino on
-                            the Bb Clarinet.
-                        </p>
-                    </div>
 
                     <h3>Projects</h3>
 
                     <div>
+                        <h4>streamd - Movie & TV Discovery Website</h4>
+                        <a href="https://streamd.vercel.app/">
+                            https://streamd.vercel.app
+                        </a>
+                        <p>Dec 2024</p>
+                        <p>
+                            Developed a responsive web app inspired by IMDb and
+                            Letterboxd for browsing, rating, and saving movies &
+                            tv shows. Integrated a RESTful API from The Movie
+                            Database (TMDB) to dynamically fetch and display
+                            film data. Implemented user authentication and
+                            sign-in functionality for creating personalized
+                            watchlists. Designed a sleek, user-friendly
+                            interface using Nextjs & Tailwind CSS.
+                        </p>
+                    </div>
+                    <div>
                         <h4>Jam House - Website</h4>
+                        <a href="https://jam-house.netlify.app/">
+                            https://jam-house.netlify.app
+                        </a>
                         <p>Raritan Valley Community College</p>
                         <p>Dec 2022</p>
                         <p>
@@ -149,6 +160,9 @@ export default function Resume() {
                     </div>
                     <div>
                         <h4>Style Stage - CSS Stylesheet</h4>
+                        <a href="https://stylestage.dev/styles/drawing-board">
+                            https://stylestage.dev/styles/drawing-board
+                        </a>
                         <p>Raritan Valley Community College</p>
                         <p>May 2022</p>
                         <p>
@@ -201,13 +215,15 @@ export default function Resume() {
                             <li>Visual Studio Code</li>
                             <li>Github</li>
                             <li>JavaScript</li>
+                            <li>Typescript</li>
                             <li>HTML</li>
                             <li>CSS/SCSS</li>
                             <li>React</li>
                             <li>NextJS</li>
+                            <li>Tailwind CSS</li>
+                            <li>Astrojs</li>
                             <li>Svelte</li>
                             <li>Unity/C#</li>
-                            <li>Typescript</li>
                         </ul>
                     </div>
                     <div>

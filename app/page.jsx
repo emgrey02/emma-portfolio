@@ -8,7 +8,7 @@ export default function Home() {
     return (
         <>
             <section className={styles.homeHeader}>
-                <h1>emma&apos;s portfolio</h1>
+                <h1>emma</h1>
                 <Image
                     src="/images/full-sun-light.svg"
                     alt="a portfolio of projects"
@@ -16,7 +16,6 @@ export default function Home() {
                     height={100}
                 />
                 <div className={styles.heroCont}>
-                    <div>hey there, my name is emma :)</div>
                     <div>
                         i am a front-end web developer and designer specializing
                         in responsive websites and modern frameworks like
